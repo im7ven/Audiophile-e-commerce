@@ -70,6 +70,7 @@ export const bodyText = css`
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 2.5rem;
+  color: #979797;
 `;
 
 export const overline = css`
