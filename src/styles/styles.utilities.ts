@@ -6,20 +6,24 @@ export const caramel = css`
   color: #d87d4a;
 `;
 
-export const atomicTangerine = css`
-  color: #fbaf85;
+export const caramelBg = css`
+  background: #d87d4a;
 `;
 
-export const nightBlack = css`
-  color: #101010;
+export const atomicTangerineBg = css`
+  background: #fbaf85;
 `;
 
-export const flashWhite = css`
-  color: #f1f1f1;
+export const nightBlackBg = css`
+  background: #101010;
 `;
 
-export const seaSalt = css`
-  color: #fafafa;
+export const flashWhiteBg = css`
+  background: #f1f1f1;
+`;
+
+export const seaSaltBg = css`
+  background: #fafafa;
 `;
 
 // Grid
