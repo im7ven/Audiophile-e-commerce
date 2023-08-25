@@ -84,7 +84,7 @@ export const overline = css`
 export const subTitle = css`
   font-size: 1.3rem;
   text-transform: uppercase;
-  line-height: 2.5rem;
+  line-height: normal;
   letter-spacing: 0.1rem;
   font-weight: 700;
 `;
