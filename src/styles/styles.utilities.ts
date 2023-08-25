@@ -69,3 +69,18 @@ export const icon = css`
     transition: 0.3s;
   }
 `;
+
+// List
+
+export const navList = css`
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    gap: 3.4rem;
+    flex-direction: row;
+  }
+`;
