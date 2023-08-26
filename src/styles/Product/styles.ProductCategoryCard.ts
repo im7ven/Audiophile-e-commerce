@@ -7,7 +7,7 @@ export const CategoryCard = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 10rem auto 0 auto;
+  margin: 0 auto;
   padding-bottom: 2.2rem;
   max-width: 35rem;
   border-radius: 9px;
@@ -17,7 +17,7 @@ export const CategoryCard = styled.div`
 export const CategoryImgContainer = styled.div`
   position: absolute;
   left: 50%;
-  top: -40%;
+  top: -30%;
   transform: translateX(-50%);
 `;
 
@@ -28,8 +28,12 @@ export const CategoryBtnContainer = styled.div`
   margin-top: 1.7rem;
 `;
 
-export const CategoryCardLabel = styled.h6`
-  ${h6}
+export const CategoryCardLabel = styled.h2`
+  font-weight: 700;
+  letter-spacing: 0.17rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
   text-align: center;
   margin: 8rem 0 0 0;
 `;
