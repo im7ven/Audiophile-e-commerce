@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import { flashWhiteBg } from "../styles.utilities";
-import { h6 } from "../styles.typography";
 
 export const CategoryCard = styled.div`
   ${flashWhiteBg}
@@ -35,5 +34,5 @@ export const CategoryCardLabel = styled.h2`
   font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
-  margin: 8rem 0 0 0;
+  margin: 10rem 0 0 0;
 `;

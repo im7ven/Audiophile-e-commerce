@@ -14,7 +14,11 @@ export const MenuContent = styled.div<MenuContentProps>`
   transition: all 0.4s;
   padding: ${({ isVisible }) => (isVisible ? " 8.4rem 2.4rem 3.5rem" : "0")};
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  @media screen and (min-width: 1100px) {
     display: none;
   }
 `;

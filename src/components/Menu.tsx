@@ -20,7 +20,7 @@ export const Menu = ({ isVisible }: Props) => {
         smallSrc={headphoneCategoryL}
         mediumSrc={headphoneCategoryS}
         largeSrc={headphoneCategoryS}
-        minWidth="141px"
+        minWidth="160px"
         alt="Earphones"
       />
       <ProductCategoryCard
@@ -28,7 +28,7 @@ export const Menu = ({ isVisible }: Props) => {
         smallSrc={speakerCategoryL}
         mediumSrc={speakerCategoryS}
         largeSrc={speakerCategoryS}
-        minWidth="141px"
+        minWidth="160px"
         alt="Earphones"
       />
       <ProductCategoryCard
@@ -36,7 +36,7 @@ export const Menu = ({ isVisible }: Props) => {
         smallSrc={earphoneCategoryL}
         mediumSrc={earphoneCategoryS}
         largeSrc={earphoneCategoryS}
-        minWidth="165px"
+        minWidth="170px"
         alt="Earphones"
       />
     </MenuContent>
