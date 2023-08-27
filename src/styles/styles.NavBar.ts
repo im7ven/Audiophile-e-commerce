@@ -30,7 +30,7 @@ export const Nav = styled.nav`
 `;
 
 export const MenuIcon = styled.img`
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1100px) {
     display: none;
   }
 `;
@@ -46,7 +46,7 @@ export const NavList = styled.ul`
   ${navList}
   display: none;
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1100px) {
     display: flex;
   }
 `;
