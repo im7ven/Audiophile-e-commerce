@@ -11,12 +11,20 @@ import logo from "../images/logo.webp";
 import cart from "../images/icon-cart.svg";
 import { Link } from "react-router-dom";
 
-export const NavBar = () => {
+interface Props {
+  onToggle: () => void;
+}
+
+export const NavBar = ({ onToggle }: Props) => {
   return (
     <NavWrapper>
       <Nav>
         <LogoMenuWrapper>
-          <MenuIcon src={hamburger} alt="Menu icon" />
+          <MenuIcon
+            onClick={() => onToggle()}
+            src={hamburger}
+            alt="Menu icon"
+          />
           <img src={logo} />
         </LogoMenuWrapper>
         <NavList>

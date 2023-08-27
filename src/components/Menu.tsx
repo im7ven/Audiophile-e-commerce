@@ -8,9 +8,13 @@ import {
   earphoneCategoryL,
   earphoneCategoryS,
 } from "../images";
-export const Menu = () => {
+
+interface Props {
+  isVisible: boolean;
+}
+export const Menu = ({ isVisible }: Props) => {
   return (
-    <MenuContent>
+    <MenuContent isVisible={isVisible}>
       <ProductCategoryCard
         label="headphones"
         smallSrc={headphoneCategoryL}
