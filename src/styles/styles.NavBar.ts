@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import { block, caramel, navList } from "./styles.utilities";
 import { subTitle } from "./styles.typography";
+import { Link } from "react-router-dom";
 
 export const NavWrapper = styled.div`
   background: #181818;
@@ -29,7 +30,7 @@ export const Nav = styled.nav`
 `;
 
 export const MenuIcon = styled.img`
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 1024px) {
     display: none;
   }
 `;
@@ -45,14 +46,15 @@ export const NavList = styled.ul`
   ${navList}
   display: none;
 
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 1024px) {
     display: flex;
   }
 `;
 
-export const NavItem = styled.li`
+export const NavItem = styled(Link)`
   ${subTitle}
   letter-spacing: 0.2rem;
+  text-decoration: none;
   color: white;
 
   &:hover {

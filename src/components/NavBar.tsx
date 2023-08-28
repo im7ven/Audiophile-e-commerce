@@ -27,10 +27,10 @@ export const NavBar = ({ onToggle }: Props) => {
           <img src={logo} />
         </LogoMenuWrapper>
         <NavList>
-          <NavItem>Home</NavItem>
-          <NavItem>Headphones</NavItem>
-          <NavItem>Speakers</NavItem>
-          <NavItem>Earphones</NavItem>
+          <NavItem to="/">Home</NavItem>
+          <NavItem to="headphones">Headphones</NavItem>
+          <NavItem to="speakers">Speakers</NavItem>
+          <NavItem to="earphones">Earphones</NavItem>
         </NavList>
         <img src={cart} alt="Shopping cart" />
       </Nav>
