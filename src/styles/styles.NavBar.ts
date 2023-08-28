@@ -3,7 +3,7 @@ import { block, caramel, navList } from "./styles.utilities";
 import { subTitle } from "./styles.typography";
 
 export const NavWrapper = styled.div`
-  background: #191919;
+  background: #181818;
   padding: 0 2.4rem;
 
   @media screen and (min-width: 768px) {

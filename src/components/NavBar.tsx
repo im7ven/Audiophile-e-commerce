@@ -9,7 +9,6 @@ import {
 import hamburger from "../images/icon-hamburger.webp";
 import logo from "../images/logo.webp";
 import cart from "../images/icon-cart.svg";
-import { Link } from "react-router-dom";
 
 interface Props {
   onToggle: () => void;
@@ -29,7 +28,7 @@ export const NavBar = ({ onToggle }: Props) => {
         </LogoMenuWrapper>
         <NavList>
           <NavItem>Home</NavItem>
-          <NavItem>Speakers</NavItem>
+          <NavItem>Headphones</NavItem>
           <NavItem>Speakers</NavItem>
           <NavItem>Earphones</NavItem>
         </NavList>
