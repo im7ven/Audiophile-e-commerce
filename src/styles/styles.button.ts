@@ -10,44 +10,48 @@ const btnBaseStyle = css`
   ${subTitle}
 `;
 
-const primaryBtnHover = css`
-  &:hover {
-    transition: 0.3s;
-    transform: scale(1.1);
-    ${atomicTangerineBg}
-  }
-`;
-
-const outlineBtnHover = css`
-  &:hover {
-    transition: 0.3s;
-    transform: scale(1.1);
-    background: #000;
-    color: #fff;
-  }
-`;
-
 export const PrimaryBtn = styled.button`
   ${btnBaseStyle}
   ${caramelBg}
-  ${primaryBtnHover}
   color: #fff;
   border: 0;
+
+  &:hover {
+    transition: 0.3s;
+    ${atomicTangerineBg}
+  }
 `;
 
 export const PrimaryBtnFullW = styled.button`
   ${btnBaseStyle}
   ${caramelBg}
-  ${primaryBtnHover}
   display:block;
   width: 100%;
 `;
 
+export const SecondaryBtn = styled.button`
+  ${btnBaseStyle}
+  color: #fff;
+  background: black;
+  border: 0;
+
+  &:hover {
+    transition: 0.3s;
+    background: #fff;
+    color: #000;
+  }
+`;
+
 export const OutlineBtn = styled.button`
   ${btnBaseStyle}
-  ${outlineBtnHover}
   border: 1.5px solid black;
   background: #fff;
+
+  &:hover {
+    transition: 0.3s;
+    background: #000;
+    color: #fff;
+  }
 `;
 
 export const LinkBtn = styled.button`
