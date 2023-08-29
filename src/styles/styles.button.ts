@@ -45,7 +45,7 @@ export const SecondaryBtn = styled.button`
 export const OutlineBtn = styled.button`
   ${btnBaseStyle}
   border: 1.5px solid black;
-  background: #fff;
+  background: 0;
 
   &:hover {
     transition: 0.3s;
