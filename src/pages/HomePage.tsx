@@ -1,4 +1,5 @@
 import { Hero } from "../components/Hero";
+import { Zx7Feature } from "../components/Home/Zx7Feature";
 import { Zx9Feature } from "../components/Home/Zx9Feature";
 import { Category } from "../components/Product/Category";
 import { MainContainer } from "../styles/Home/styles.MainContainer";
@@ -14,6 +15,7 @@ export const HomePage = () => {
           marginD="20rem auto 16.8rem "
         />
         <Zx9Feature />
+        <Zx7Feature />
       </MainContainer>
     </>
   );
