@@ -13,7 +13,6 @@ export const CategoryWrapper = styled.div<CategoryProps>`
   display: flex;
   flex-direction: column;
   gap: 6.8rem;
-  padding: 0 2.4rem;
 
   @media screen and (min-width: 768px) {
     margin: ${(props) => props.marginT};
