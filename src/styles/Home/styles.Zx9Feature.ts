@@ -15,10 +15,12 @@ export const Zx9FeatureWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center -13rem;
+  margin-bottom: 2.4rem;
 
   @media screen and (min-width: 768px) {
     background-position: center -27rem;
     background-size: 130%;
+    margin-bottom: 3.2rem;
   }
 
   @media screen and (min-width: 1024px) {
@@ -28,6 +30,7 @@ export const Zx9FeatureWrapper = styled.div`
     height: 56rem;
     background-size: auto auto;
     background-position: -14rem -4rem;
+    margin-bottom: 4.8rem;
   }
 `;
 

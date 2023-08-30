@@ -6,9 +6,16 @@ export const Yx1FeatureWrapper = styled.div`
   ${grid1x2M_T}
   ${block}
   gap: 2.4rem;
+  margin-bottom: 12rem;
 
   @media screen and (min-width: 768px) {
     gap: 1rem;
+    margin-bottom: 9.6rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    gap: 3rem;
+    margin-bottom: 20rem;
   }
 `;
 
