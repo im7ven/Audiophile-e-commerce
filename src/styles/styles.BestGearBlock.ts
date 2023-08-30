@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import { block, grid1x2M_D } from "./styles.utilities";
 import { bodyText, h2 } from "./styles.typography";
+import { homeBlockMargin } from "./Home/styles.MainContainer";
 
 export const BestGearWrapper = styled.div`
   ${grid1x2M_D}
   ${block}
+  ${homeBlockMargin}
   text-align: center;
   align-items: center;
 
