@@ -1,4 +1,6 @@
 import { Hero } from "../components/Hero";
+import { Yx1Feature } from "../components/Home/Yx1Feature";
+
 import { Zx7Feature } from "../components/Home/Zx7Feature";
 import { Zx9Feature } from "../components/Home/Zx9Feature";
 import { Category } from "../components/Product/Category";
@@ -16,6 +18,7 @@ export const HomePage = () => {
         />
         <Zx9Feature />
         <Zx7Feature />
+        <Yx1Feature />
       </MainContainer>
     </>
   );

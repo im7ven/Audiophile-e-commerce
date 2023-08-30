@@ -14,6 +14,9 @@ import circles from "./pattern-circles.svg";
 import homeZx7M from "./speaker-zx7M.webp";
 import homeZx7T from "./speaker-zx7T.webp";
 import homeZx7D from "./speaker-zx7D.webp";
+import homeYx1M from "./earphones-yx1M.webp";
+import homeYx1T from "./earphones-yx1T.webp";
+import homeYx1D from "./earphones-yx1D.webp";
 
 export {
   headphoneCategoryL,
@@ -32,4 +35,7 @@ export {
   homeZx7M,
   homeZx7T,
   homeZx7D,
+  homeYx1M,
+  homeYx1T,
+  homeYx1D,
 };
