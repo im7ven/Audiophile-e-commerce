@@ -1,3 +1,4 @@
+import { BestGearBlock } from "../components/BestGearBlock";
 import { Hero } from "../components/Hero";
 import { Yx1Feature } from "../components/Home/Yx1Feature";
 
@@ -19,6 +20,7 @@ export const HomePage = () => {
         <Zx9Feature />
         <Zx7Feature />
         <Yx1Feature />
+        <BestGearBlock />
       </MainContainer>
     </>
   );

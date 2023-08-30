@@ -17,6 +17,9 @@ import homeZx7D from "./speaker-zx7D.webp";
 import homeYx1M from "./earphones-yx1M.webp";
 import homeYx1T from "./earphones-yx1T.webp";
 import homeYx1D from "./earphones-yx1D.webp";
+import bestGearM from "./best-gearM.webp";
+import bestGearT from "./best-gearT.webp";
+import bestGearD from "./best-gearD.webp";
 
 export {
   headphoneCategoryL,
@@ -38,4 +41,7 @@ export {
   homeYx1M,
   homeYx1T,
   homeYx1D,
+  bestGearM,
+  bestGearT,
+  bestGearD,
 };
