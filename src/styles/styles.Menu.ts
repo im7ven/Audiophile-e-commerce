@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface MenuContentProps {
-  isVisible: boolean;
+  isvisible: boolean;
 }
 
 export const MenuContent = styled.div<MenuContentProps>`
@@ -9,11 +9,11 @@ export const MenuContent = styled.div<MenuContentProps>`
   flex-direction: column;
   gap: 7rem;
   background: #fff;
-  opacity: ${({ isVisible }) => (isVisible ? "1" : "0")};
-  max-height: ${({ isVisible }) => (isVisible ? "auto" : "0")};
+  opacity: ${({ isvisible }) => (isvisible ? "1" : "0")};
+  max-height: ${({ isvisible }) => (isvisible ? "auto" : "0")};
   overflow: hidden;
   transition: all 0.2s ease-out;
-  padding: ${({ isVisible }) => (isVisible ? " 8.4rem 2.4rem 3.5rem" : "0")};
+  padding: ${({ isvisible }) => (isvisible ? " 8.4rem 2.4rem 3.5rem" : "0")};
 
   @media screen and (min-width: 768px) {
     flex-direction: row;

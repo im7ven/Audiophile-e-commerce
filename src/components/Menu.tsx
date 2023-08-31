@@ -10,11 +10,11 @@ import {
 } from "../images";
 
 interface Props {
-  isVisible: boolean;
+  isvisible: boolean;
 }
-export const Menu = ({ isVisible }: Props) => {
+export const Menu = ({ isvisible }: Props) => {
   return (
-    <MenuContent isVisible={isVisible}>
+    <MenuContent isvisible={isvisible}>
       <ProductCategoryCard
         label="headphones"
         smallSrc={headphoneCategoryL}
