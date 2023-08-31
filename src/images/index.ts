@@ -24,6 +24,24 @@ import logo from "./logo.webp";
 import facebook from "./icon-facebook.svg";
 import twitter from "./icon-twitter.svg";
 import instagram from "./icon-instagram.svg";
+import zx9FeatureImgD from "./zx9FeatureD.webp";
+import zx9FeatureImgT from "./zx9FeatureT.webp";
+import zx9FeatureImgM from "./zx9FeatureM.webp";
+import zx7FeatureImgD from "./zx7FeatureD.webp";
+import zx7FeatureImgT from "./zx7FeatureT.webp";
+import zx7FeatureImgM from "./zx7FeatureM.webp";
+import xx59FeatureImgD from "./xx59FeatureD.webp";
+import xx59FeatureImgT from "./xx59FeatureT.webp";
+import xx59FeatureImgM from "./xx59FeatureM.webp";
+import xx99M1FeatureImgD from "./xx99Mark1FeatureD.webp";
+import xx99M1FeatureImgT from "./xx99Mark1FeatureT.webp";
+import xx99M1FeatureImgM from "./xx99Mark1FeatureM.webp";
+import xx99M2FeatureImgD from "./xx99Mark2FeatureD.webp";
+import xx99M2FeatureImgT from "./xx99Mark2FeatureT.webp";
+import xx99M2FeatureImgM from "./xx99Mark2FeatureM.webp";
+import yx1FeatureImgD from "./yx1FeatureD.webp";
+import yx1FeatureImgT from "./yx1FeatureT.webp";
+import yx1FeatureImgM from "./yx1FeatureM.webp";
 
 export {
   headphoneCategoryL,
@@ -52,4 +70,22 @@ export {
   facebook,
   instagram,
   twitter,
+  xx59FeatureImgD,
+  xx59FeatureImgT,
+  xx59FeatureImgM,
+  xx99M1FeatureImgD,
+  xx99M1FeatureImgT,
+  xx99M1FeatureImgM,
+  xx99M2FeatureImgD,
+  xx99M2FeatureImgT,
+  xx99M2FeatureImgM,
+  zx7FeatureImgD,
+  zx7FeatureImgT,
+  zx7FeatureImgM,
+  zx9FeatureImgD,
+  zx9FeatureImgT,
+  zx9FeatureImgM,
+  yx1FeatureImgD,
+  yx1FeatureImgT,
+  yx1FeatureImgM,
 };
