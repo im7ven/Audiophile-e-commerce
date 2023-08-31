@@ -9,15 +9,9 @@ import {
 import { CategoryWrapper } from "../../styles/Product/styles.Category";
 import { ProductCategoryCard } from "./ProductCategoryCard";
 
-interface Props {
-  marginM: string;
-  marginT: string;
-  marginD: string;
-}
-
-export const Category = ({ marginM, marginT, marginD }: Props) => {
+export const Category = () => {
   return (
-    <CategoryWrapper marginM={marginM} marginT={marginT} marginD={marginD}>
+    <CategoryWrapper>
       <ProductCategoryCard
         label="headphones"
         smallSrc={headphoneCategoryL}
