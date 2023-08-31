@@ -20,11 +20,12 @@ export const NavBar = ({ onToggle }: Props) => {
       <Nav>
         <LogoMenuWrapper>
           <MenuIcon
+            loading="lazy"
             onClick={() => onToggle()}
             src={hamburger}
             alt="Menu icon"
           />
-          <img src={logo} />
+          <img loading="lazy" src={logo} />
         </LogoMenuWrapper>
         <NavList>
           <NavItem to="/">Home</NavItem>
@@ -32,7 +33,7 @@ export const NavBar = ({ onToggle }: Props) => {
           <NavItem to="speakers">Speakers</NavItem>
           <NavItem to="earphones">Earphones</NavItem>
         </NavList>
-        <img src={cart} alt="Shopping cart" />
+        <img loading="lazy" src={cart} alt="Shopping cart" />
       </Nav>
     </NavWrapper>
   );

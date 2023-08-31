@@ -15,6 +15,7 @@ export const ProductImage = ({
 }: Props) => {
   return (
     <img
+      loading="lazy"
       srcSet={`${largeSrc} 320w, ${mediumSrc} 768w, ${smallSrc}, 1440w`}
       alt={alt}
       style={{ minWidth: minWidth }}

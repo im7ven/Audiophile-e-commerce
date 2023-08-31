@@ -25,6 +25,7 @@ export const BestGearBlock = () => {
             height="300px"
           />
           <img
+            loading="lazy"
             src={bestGearD}
             alt="Responsive Image"
             width="540px"

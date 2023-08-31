@@ -18,7 +18,7 @@ export const Footer = () => {
     <FooterWrapper>
       <FooterContainer>
         <LogoNavWrapper>
-          <Logo src={logo} alt="" />
+          <Logo loading="lazy" src={logo} alt="" />
           <FooterNav>
             <NavItem to="/">Home</NavItem>
             <NavItem to="headphones">Headphones</NavItem>

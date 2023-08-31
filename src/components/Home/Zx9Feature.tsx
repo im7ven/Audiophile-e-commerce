@@ -7,14 +7,15 @@ import {
   Zx9FeatureWrapper,
 } from "../../styles/Home/styles.Zx9Feature";
 import { SecondaryBtn } from "../../styles/styles.button";
-import { ProductImage } from "../Product/ProductImage";
 
 export const Zx9Feature = () => {
   return (
     <Zx9FeatureWrapper>
       <ImageWrapper>
         <img
+          loading="lazy"
           srcSet={`${homeZx9D} 1024w, ${homeZx9T} 768w, ${homeZx9M} 320w`}
+          src={homeZx9T}
           width="100%"
         />
       </ImageWrapper>
