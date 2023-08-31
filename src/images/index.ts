@@ -20,6 +20,10 @@ import homeYx1D from "./earphones-yx1D.webp";
 import bestGearM from "./best-gearM.webp";
 import bestGearT from "./best-gearT.webp";
 import bestGearD from "./best-gearD.webp";
+import logo from "./logo.webp";
+import facebook from "./icon-facebook.svg";
+import twitter from "./icon-twitter.svg";
+import instagram from "./icon-instagram.svg";
 
 export {
   headphoneCategoryL,
@@ -44,4 +48,8 @@ export {
   bestGearM,
   bestGearT,
   bestGearD,
+  logo,
+  facebook,
+  instagram,
+  twitter,
 };
