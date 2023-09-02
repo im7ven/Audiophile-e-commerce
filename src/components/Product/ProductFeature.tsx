@@ -44,7 +44,13 @@ export const ProductFeature = ({
           srcSet={mobileSrc}
           media="(max-width: 480px)"
         />
-        <ProductFeatureImage width="540px" height="560px" src={src} alt={alt} />
+        <ProductFeatureImage
+          loading="lazy"
+          width="540px"
+          height="560px"
+          src={src}
+          alt={alt}
+        />
       </Picture>
       <ProductFeatureDetailWrapper>
         {overline}
