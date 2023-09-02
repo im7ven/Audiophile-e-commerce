@@ -42,6 +42,24 @@ import xx99M2FeatureImgM from "./xx99Mark2FeatureM.webp";
 import yx1FeatureImgD from "./yx1FeatureD.webp";
 import yx1FeatureImgT from "./yx1FeatureT.webp";
 import yx1FeatureImgM from "./yx1FeatureM.webp";
+import zx9ProductImgD from "./zx9ProductD.webp";
+import zx9ProductImgT from "./zx9ProductT.webp";
+import zx9ProductImgM from "./zx9ProductM.webp";
+import zx7ProductImgD from "./zx7ProductD.webp";
+import zx7ProductImgT from "./zx7ProductT.webp";
+import zx7ProductImgM from "./zx7ProductM.webp";
+import xx59ProductImgD from "./xx59ProductD.webp";
+import xx59ProductImgT from "./xx59ProductT.webp";
+import xx59ProductImgM from "./xx59ProductM.webp";
+import xx99M1ProductImgD from "./xx99Mark1ProductD.webp";
+import xx99M1ProductImgT from "./xx99Mark1ProductT.webp";
+import xx99M1ProductImgM from "./xx99Mark1ProductM.webp";
+import xx99M2ProductImgD from "./xx99Mark2ProductD.webp";
+import xx99M2ProductImgT from "./xx99Mark2ProductT.webp";
+import xx99M2ProductImgM from "./xx99Mark2ProductM.webp";
+import yx1ProductImgD from "./yx1ProductD.webp";
+import yx1ProductImgT from "./yx1ProductT.webp";
+import yx1ProductImgM from "./yx1ProductM.webp";
 
 export {
   headphoneCategoryL,
@@ -88,4 +106,22 @@ export {
   yx1FeatureImgD,
   yx1FeatureImgT,
   yx1FeatureImgM,
+  xx59ProductImgD,
+  xx59ProductImgT,
+  xx59ProductImgM,
+  xx99M1ProductImgD,
+  xx99M1ProductImgT,
+  xx99M1ProductImgM,
+  xx99M2ProductImgD,
+  xx99M2ProductImgT,
+  xx99M2ProductImgM,
+  zx7ProductImgD,
+  zx7ProductImgT,
+  zx7ProductImgM,
+  zx9ProductImgD,
+  zx9ProductImgT,
+  zx9ProductImgM,
+  yx1ProductImgD,
+  yx1ProductImgT,
+  yx1ProductImgM,
 };

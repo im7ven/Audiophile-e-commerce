@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { bodyText, subTitle } from "./styles.typography";
 import { atomicTangerineBg, caramel, caramelBg } from "./styles.utilities";
 
-const btnBaseStyle = css`
+export const btnBaseStyle = css`
   padding: 1.5rem 3rem;
   outline: 0;
   cursor: pointer;
