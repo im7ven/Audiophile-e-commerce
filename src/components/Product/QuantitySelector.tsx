@@ -3,7 +3,7 @@ import {
   QuantityAmount,
   QuantitySelectorWrapper,
   RemoveButton,
-} from "../../components/Product/style.QuantitySelector";
+} from "../../styles/Product/style.QuantitySelector";
 
 export const QuantitySelector = () => {
   return (

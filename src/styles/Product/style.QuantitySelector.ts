@@ -1,6 +1,6 @@
 import { css, styled } from "styled-components";
-import { flashWhiteBg } from "../../styles/styles.utilities";
-import { subTitle } from "../../styles/styles.typography";
+import { flashWhiteBg } from "../styles.utilities";
+import { subTitle } from "../styles.typography";
 
 export const QuantitySelectorWrapper = styled.div`
   display: flex;
