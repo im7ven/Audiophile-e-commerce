@@ -6,8 +6,8 @@ import {
   HeroInfo,
   HeroOverline,
   HeroWrapper,
-} from "../styles/styles.Hero";
-import { PrimaryBtn } from "../styles/styles.button";
+} from "../../styles/styles.Hero";
+import { PrimaryBtn } from "../../styles/styles.button";
 
 export const Hero = () => {
   return (

@@ -1,5 +1,5 @@
-import { MenuContent } from "../styles/styles.Menu";
-import { ProductCategoryCard } from "./Product/ProductCategoryCard";
+import { MenuContent } from "../../styles/styles.Menu";
+import { ProductCategoryCard } from "../Product/ProductCategoryCard";
 import {
   headphoneCategoryL,
   headphoneCategoryS,
@@ -7,7 +7,7 @@ import {
   speakerCategoryS,
   earphoneCategoryL,
   earphoneCategoryS,
-} from "../images";
+} from "../../images";
 
 interface Props {
   isvisible: boolean;

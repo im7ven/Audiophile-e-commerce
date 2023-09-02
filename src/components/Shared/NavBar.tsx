@@ -5,10 +5,10 @@ import {
   NavItem,
   NavList,
   NavWrapper,
-} from "../styles/styles.NavBar";
-import hamburger from "../images/icon-hamburger.webp";
-import logo from "../images/logo.webp";
-import cart from "../images/icon-cart.svg";
+} from "../../styles/styles.NavBar";
+import hamburger from "../../images/icon-hamburger.webp";
+import logo from "../../images/logo.webp";
+import cart from "../../images/icon-cart.svg";
 
 interface Props {
   onToggle: () => void;

@@ -1,4 +1,4 @@
-import { facebook, instagram, logo, twitter } from "../images";
+import { facebook, instagram, logo, twitter } from "../../images";
 import {
   Copyright,
   FooterContainer,
@@ -10,8 +10,8 @@ import {
   Logo,
   LogoNavWrapper,
   SocialIcon,
-} from "../styles/styles.Footer";
-import { NavItem } from "../styles/styles.NavBar";
+} from "../../styles/styles.Footer";
+import { NavItem } from "../../styles/styles.NavBar";
 
 export const Footer = () => {
   return (

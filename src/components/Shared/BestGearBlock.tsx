@@ -1,11 +1,11 @@
-import { bestGearD, bestGearM, bestGearT } from "../images";
+import { bestGearD, bestGearM, bestGearT } from "../../images";
 import {
   BestGearDescription,
   BestGearDetails,
   BestGearHeading,
   BestGearImage,
   BestGearWrapper,
-} from "../styles/styles.BestGearBlock";
+} from "../../styles/styles.BestGearBlock";
 
 export const BestGearBlock = () => {
   return (

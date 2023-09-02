@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
 import { GlobalStyles } from "../styles/styles.global";
-import { NavBar } from "../components/NavBar";
-import { Menu } from "../components/Menu";
+import { NavBar } from "../components/Shared/NavBar";
+import { Menu } from "../components/Shared/Menu";
 import { useState } from "react";
-import { Footer } from "../components/Footer";
+import { Footer } from "../components/Shared/Footer";
 
 export const Layout = () => {
   const [isVisible, setVisibility] = useState(false);
