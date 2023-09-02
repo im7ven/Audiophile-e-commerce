@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import { homeYx1D, homeYx1M, homeYx1T } from "../../images";
 import { block, flashWhiteBg, grid1x2M_T } from "../styles.utilities";
-import { homeBlockMargin } from "./styles.MainContainer";
+import { homeBlockMargin } from "../styles.MainContainer";
 
 export const Yx1FeatureWrapper = styled.div`
   ${grid1x2M_T}

@@ -4,7 +4,7 @@ import { HomeCategory } from "../components/Home/HomeCategory";
 import { Yx1Feature } from "../components/Home/Yx1Feature";
 import { Zx7Feature } from "../components/Home/Zx7Feature";
 import { Zx9Feature } from "../components/Home/Zx9Feature";
-import { MainContainer } from "../styles/Home/styles.MainContainer";
+import { MainContainer } from "../styles/styles.MainContainer";
 
 export const HomePage = () => {
   return (
