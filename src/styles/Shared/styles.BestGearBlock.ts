@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { block, grid1x2M_D } from "../styles.utilities";
 import { bodyText, h2 } from "../styles.typography";
-import { homeBlockMargin } from "../styles.MainContainer";
+import { homeBlockMargin } from "../Pages/styles.pages";
 
 export const BestGearWrapper = styled.div`
   ${grid1x2M_D}

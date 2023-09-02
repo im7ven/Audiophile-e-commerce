@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const MainContainer = styled.div`
+export const PagePadding = styled.div`
   padding: 0 2.4rem;
 `;
 
