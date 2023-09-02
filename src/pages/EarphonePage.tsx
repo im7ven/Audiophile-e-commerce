@@ -23,7 +23,7 @@ export const EarphonePage = () => {
             tabletSrc={yx1FeatureImgT}
             mobileSrc={yx1FeatureImgM}
             overline={<ProductOverline>New product</ProductOverline>}
-            heading="yx1 speaker"
+            heading="yx1 wireless earphones"
             alt="YX1 Speaker"
             description="Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature."
             button={<PrimaryBtn>See Product</PrimaryBtn>}
