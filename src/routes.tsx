@@ -4,6 +4,7 @@ import { Layout } from "./pages/Layout";
 import { HomePage } from "./pages/HomePage";
 import { SpeakerPage } from "./pages/SpeakerPage";
 import { EarphonePage } from "./pages/EarphonePage";
+import { HeadphonePage } from "./pages/HeadphonePage";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
       { path: "", element: <HomePage /> },
       { path: "speakers", element: <SpeakerPage /> },
       { path: "earphones", element: <EarphonePage /> },
+      { path: "headphones", element: <HeadphonePage /> },
     ],
   },
 ]);
