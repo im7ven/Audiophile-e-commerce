@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const SpeakerFeatureWrapper = styled.div`
+export const CategoryPageFeatureWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12rem;
@@ -16,7 +16,7 @@ export const SpeakerFeatureWrapper = styled.div`
   }
 `;
 
-export const SpeakerCategoryWrapper = styled.div`
+export const CategoryBlockWrapper = styled.div`
   margin: 17.2rem 0 12rem;
 
   @media screen and (min-width: 1024px) {

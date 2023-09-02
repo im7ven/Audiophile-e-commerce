@@ -9,9 +9,9 @@ import {
   zx9FeatureImgT,
 } from "../images";
 import {
-  SpeakerCategoryWrapper,
-  SpeakerFeatureWrapper,
-} from "../styles/Pages/style.SpeakerPage";
+  CategoryBlockWrapper,
+  CategoryPageFeatureWrapper,
+} from "../styles/Pages/sytles.category";
 import { ProductOverline } from "../styles/Product/styles.ProductFeature";
 import { PagePadding } from "../styles/Pages/styles.pages";
 import { PrimaryBtn } from "../styles/styles.button";
@@ -23,7 +23,7 @@ export const SpeakerPage = () => {
     <>
       <CategoryPageHeading heading="Speakers" />
       <PagePadding>
-        <SpeakerFeatureWrapper>
+        <CategoryPageFeatureWrapper>
           <ProductFeature
             order="0"
             src={zx9FeatureImgD}
@@ -45,10 +45,10 @@ export const SpeakerPage = () => {
             description="Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use."
             button={<PrimaryBtn>See Product</PrimaryBtn>}
           ></ProductFeature>
-        </SpeakerFeatureWrapper>
-        <SpeakerCategoryWrapper>
+        </CategoryPageFeatureWrapper>
+        <CategoryBlockWrapper>
           <Category />
-        </SpeakerCategoryWrapper>
+        </CategoryBlockWrapper>
         <BestGearBlock />
       </PagePadding>
     </>
