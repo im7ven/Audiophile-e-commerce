@@ -13,13 +13,12 @@ import {
   xx99M2FeatureImgM,
   xx99M2FeatureImgT,
 } from "../images";
-import { PagePadding } from "../styles/Pages/styles.pages";
+import { PagePadding, SeeProductBtn } from "../styles/Pages/styles.pages";
 import {
   CategoryBlockWrapper,
   CategoryPageFeatureWrapper,
 } from "../styles/Pages/sytles.category";
 import { ProductOverline } from "../styles/Product/styles.ProductFeature";
-import { PrimaryBtn } from "../styles/styles.button";
 
 export const HeadphonePage = () => {
   return (
@@ -36,7 +35,7 @@ export const HeadphonePage = () => {
             heading="xx99 mark ii headphones"
             alt="XX99 Mark 2 Headphones"
             description="The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound."
-            button={<PrimaryBtn>See Product</PrimaryBtn>}
+            button={<SeeProductBtn to="xx99markII">See Product</SeeProductBtn>}
           ></ProductFeature>
           <ProductFeature
             order="1"
@@ -47,7 +46,7 @@ export const HeadphonePage = () => {
             heading="xx99 mark i headphones"
             alt="XX99 Mark 1 Headphones"
             description="As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go."
-            button={<PrimaryBtn>See Product</PrimaryBtn>}
+            button={<SeeProductBtn to="xx99markI">See Product</SeeProductBtn>}
           ></ProductFeature>
           <ProductFeature
             order="0"
@@ -58,7 +57,7 @@ export const HeadphonePage = () => {
             heading="xx59  headphones"
             alt="XX59  Headphones"
             description="Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move."
-            button={<PrimaryBtn>See Product</PrimaryBtn>}
+            button={<SeeProductBtn to="xx59">See Product</SeeProductBtn>}
           ></ProductFeature>
         </CategoryPageFeatureWrapper>
         <CategoryBlockWrapper>
