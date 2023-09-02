@@ -96,6 +96,6 @@ export const ProductFeatureDescription = styled.p`
 
   @media screen and (min-width: 1024px) {
     max-width: 44.5rem;
-    text-align: left;
+    align-self: flex-start;
   }
 `;
