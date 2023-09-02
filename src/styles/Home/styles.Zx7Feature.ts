@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { homeZx7D, homeZx7M, homeZx7T } from "../../images";
-import { h2 } from "../styles.typography";
 import { block } from "../styles.utilities";
 
 export const Zx7Container = styled.div`

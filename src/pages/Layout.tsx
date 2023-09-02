@@ -16,7 +16,7 @@ export const Layout = () => {
     <>
       <GlobalStyles />
       <NavBar onToggle={toggleMenu} />
-      <Menu isVisible={isVisible} />
+      <Menu isvisible={isVisible} />
       <div id="main">
         <Outlet />
       </div>
