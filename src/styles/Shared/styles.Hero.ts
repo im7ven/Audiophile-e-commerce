@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
-import { heroImg, heroMobile, heroTablet } from "../images";
-import { bodyText, h1, overline } from "./styles.typography";
-import { block, grid1x2M_D } from "./styles.utilities";
+import { heroImg, heroMobile, heroTablet } from "../../images";
+import { bodyText, h1, overline } from "../styles.typography";
+import { block, grid1x2M_D } from "../styles.utilities";
 
 export const HeroWrapper = styled.div`
   background-color: #1a1a1a;

@@ -5,7 +5,7 @@ import {
   BestGearHeading,
   BestGearImage,
   BestGearWrapper,
-} from "../../styles/styles.BestGearBlock";
+} from "../../styles/Shared/styles.BestGearBlock";
 
 export const BestGearBlock = () => {
   return (

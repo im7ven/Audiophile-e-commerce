@@ -10,8 +10,8 @@ import {
   Logo,
   LogoNavWrapper,
   SocialIcon,
-} from "../../styles/styles.Footer";
-import { NavItem } from "../../styles/styles.NavBar";
+} from "../../styles/Shared/styles.Footer";
+import { NavItem } from "../../styles/Shared/styles.NavBar";
 
 export const Footer = () => {
   return (

@@ -1,4 +1,4 @@
-import { MenuContent } from "../../styles/styles.Menu";
+import { MenuContent } from "../../styles/Shared/styles.Menu";
 import { ProductCategoryCard } from "../Product/ProductCategoryCard";
 import {
   headphoneCategoryL,

@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { bodyText } from "./styles.typography";
+import { bodyText } from "../styles.typography";
 import {
   block,
   caramelBg,
   icon,
   navList,
   nightBlackBg,
-} from "./styles.utilities";
+} from "../styles.utilities";
 
 export const FooterWrapper = styled.div`
   ${nightBlackBg}

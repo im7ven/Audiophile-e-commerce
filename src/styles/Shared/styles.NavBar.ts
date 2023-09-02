@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
-import { block, caramel, navList } from "./styles.utilities";
-import { subTitle } from "./styles.typography";
+import { block, caramel, navList } from "../styles.utilities";
+import { subTitle } from "../styles.typography";
 import { Link } from "react-router-dom";
 
 export const NavWrapper = styled.div`

@@ -6,7 +6,7 @@ import {
   HeroInfo,
   HeroOverline,
   HeroWrapper,
-} from "../../styles/styles.Hero";
+} from "../../styles/Shared/styles.Hero";
 import { PrimaryBtn } from "../../styles/styles.button";
 
 export const Hero = () => {
