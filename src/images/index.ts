@@ -78,15 +78,15 @@ import zx7gallery2M from "./zx9gallery2M.webp";
 import zx7gallery3D from "./zx9gallery3D.webp";
 import zx7gallery3T from "./zx9gallery3T.webp";
 import zx7gallery3M from "./zx9gallery3M.webp";
-import yz1gallery1D from "./yx1gallery1D.webp";
-import yz1gallery1T from "./yx1gallery1T.webp";
-import yz1gallery1M from "./yx1gallery1M.webp";
-import yz1gallery2D from "./yx1gallery2D.webp";
-import yz1gallery2T from "./yx1gallery2T.webp";
-import yz1gallery2M from "./yx1gallery2M.webp";
-import yz1gallery3D from "./yx1gallery3D.webp";
-import yz1gallery3T from "./yx1gallery3T.webp";
-import yz1gallery3M from "./yx1gallery3M.webp";
+import yx1gallery1D from "./yx1gallery1D.webp";
+import yx1gallery1T from "./yx1gallery1T.webp";
+import yx1gallery1M from "./yx1gallery1M.webp";
+import yx1gallery2D from "./yx1gallery2D.webp";
+import yx1gallery2T from "./yx1gallery2T.webp";
+import yx1gallery2M from "./yx1gallery2M.webp";
+import yx1gallery3D from "./yx1gallery3D.webp";
+import yx1gallery3T from "./yx1gallery3T.webp";
+import yx1gallery3M from "./yx1gallery3M.webp";
 import xx59gallery1D from "./xx59gallery1D.webp";
 import xx59gallery1T from "./xx59gallery1T.webp";
 import xx59gallery1M from "./xx59gallery1M.webp";
@@ -196,15 +196,15 @@ export {
   zx7gallery3D,
   zx7gallery3T,
   zx7gallery3M,
-  yz1gallery1D,
-  yz1gallery1T,
-  yz1gallery1M,
-  yz1gallery2D,
-  yz1gallery2T,
-  yz1gallery2M,
-  yz1gallery3D,
-  yz1gallery3T,
-  yz1gallery3M,
+  yx1gallery1D,
+  yx1gallery1T,
+  yx1gallery1M,
+  yx1gallery2D,
+  yx1gallery2T,
+  yx1gallery2M,
+  yx1gallery3D,
+  yx1gallery3T,
+  yx1gallery3M,
   xx59gallery1D,
   xx59gallery1T,
   xx59gallery1M,

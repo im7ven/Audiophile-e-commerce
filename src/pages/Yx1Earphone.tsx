@@ -1,6 +1,20 @@
+import { ProductImageGallery } from "../components/Product/ProductImageGallery";
 import { ProductItem } from "../components/Product/ProductItem";
 import { ProductItemFeature } from "../components/Product/ProductItemFeature";
-import { yx1ProductImgD, yx1ProductImgM, yx1ProductImgT } from "../images";
+import {
+  yx1ProductImgD,
+  yx1ProductImgM,
+  yx1ProductImgT,
+  yx1gallery1D,
+  yx1gallery1M,
+  yx1gallery1T,
+  yx1gallery2D,
+  yx1gallery2M,
+  yx1gallery2T,
+  yx1gallery3D,
+  yx1gallery3M,
+  yx1gallery3T,
+} from "../images";
 import { PagePadding } from "../styles/Pages/styles.pages";
 import { ProductItemOverline } from "../styles/Product/styles.ProductItem";
 import {
@@ -61,6 +75,18 @@ export const Yx1Earphone = () => {
         splash resistant design now available in an all new white and grey color
         scheme as well as the popular classic black.
       </ProductItemFeature>
+      <ProductImageGallery
+        image1D={yx1gallery1D}
+        image1T={yx1gallery1T}
+        image1M={yx1gallery1M}
+        image2D={yx1gallery2D}
+        image2T={yx1gallery2T}
+        image2M={yx1gallery2M}
+        image3D={yx1gallery3D}
+        image3T={yx1gallery3T}
+        image3M={yx1gallery3M}
+        alt="Show casing YX1 Wireless earphones"
+      />
     </PagePadding>
   );
 };
