@@ -11,11 +11,10 @@ import {
 import {
   CategoryBlockWrapper,
   CategoryPageFeatureWrapper,
-} from "../styles/Pages/sytles.category";
+} from "../styles/Pages/styles.category-page";
 import { ProductOverline } from "../styles/Product/styles.ProductFeature";
 import { PagePadding, SeeProductBtn } from "../styles/Pages/styles.pages";
-import { PrimaryBtn } from "../styles/styles.button";
-import { Category } from "../components/Product/Category";
+import { Category } from "../components/Shared/Category";
 import { BestGearBlock } from "../components/Shared/BestGearBlock";
 
 export const SpeakerPage = () => {

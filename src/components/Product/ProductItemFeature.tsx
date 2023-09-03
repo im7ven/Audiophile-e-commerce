@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { ProductItemDescription } from "../../styles/Product/styles.ProductItem";
 import {
   FeatureDetailWrapper,
   FeatureHeading,
