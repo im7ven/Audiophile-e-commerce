@@ -8,7 +8,7 @@ import {
   ProductItemName,
   ProductItemPrice,
 } from "../../styles/Product/styles.ProductItem";
-import { QuantitySelector } from "./QuantitySelector";
+import { QuantitySelector } from "../Shared/QuantitySelector";
 import { PrimaryBtn } from "../../styles/styles.button";
 
 interface Props {
