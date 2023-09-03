@@ -114,6 +114,21 @@ import xx99M2gallery2M from "./xx99M2gallery2M.webp";
 import xx99M2gallery3D from "./xx99M2gallery3D.webp";
 import xx99M2gallery3T from "./xx99M2gallery3T.webp";
 import xx99M2gallery3M from "./xx99M2gallery3M.webp";
+import zx9SuggestD from "./zx9SuggestD.webp";
+import zx9SuggestT from "./zx9SuggestT.webp";
+import zx9SuggestM from "./zx9SuggestM.webp";
+import zx7SuggestD from "./zx7SuggestD.webp";
+import zx7SuggestT from "./zx7SuggestT.webp";
+import zx7SuggestM from "./zx7SuggestM.webp";
+import xx99M1SuggestD from "./xx99M1SuggestD.webp";
+import xx99M1SuggestT from "./xx99M1SuggestT.webp";
+import xx99M1SuggestM from "./xx99M1SuggestM.webp";
+import xx99M2SuggestD from "./xx99M2SuggestD.webp";
+import xx99M2SuggestT from "./xx99M2SuggestT.webp";
+import xx99M2SuggestM from "./xx99M2SuggestM.webp";
+import xx59SuggestD from "./xx59SuggestD.webp";
+import xx59SuggestT from "./xx59SuggestT.webp";
+import xx59SuggestM from "./xx59SuggestM.webp";
 
 export {
   headphoneCategoryL,
@@ -232,4 +247,19 @@ export {
   xx99M2gallery3D,
   xx99M2gallery3T,
   xx99M2gallery3M,
+  zx9SuggestD,
+  zx9SuggestT,
+  zx9SuggestM,
+  zx7SuggestD,
+  zx7SuggestT,
+  zx7SuggestM,
+  xx99M1SuggestD,
+  xx99M1SuggestT,
+  xx99M1SuggestM,
+  xx99M2SuggestD,
+  xx99M2SuggestT,
+  xx99M2SuggestM,
+  xx59SuggestD,
+  xx59SuggestT,
+  xx59SuggestM,
 };
