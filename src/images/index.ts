@@ -60,6 +60,60 @@ import xx99M2ProductImgM from "./xx99Mark2ProductM.webp";
 import yx1ProductImgD from "./yx1ProductD.webp";
 import yx1ProductImgT from "./yx1ProductT.webp";
 import yx1ProductImgM from "./yx1ProductM.webp";
+import zx9gallery1D from "./zx9gallery1D.webp";
+import zx9gallery1T from "./zx9gallery1T.webp";
+import zx9gallery1M from "./zx9gallery1M.webp";
+import zx9gallery2D from "./zx9gallery2D.webp";
+import zx9gallery2T from "./zx9gallery2T.webp";
+import zx9gallery2M from "./zx9gallery2M.webp";
+import zx9gallery3D from "./zx9gallery3D.webp";
+import zx9gallery3T from "./zx9gallery3T.webp";
+import zx9gallery3M from "./zx9gallery3M.webp";
+import zx7gallery1D from "./zx9gallery1D.webp";
+import zx7gallery1T from "./zx9gallery1T.webp";
+import zx7gallery1M from "./zx9gallery1M.webp";
+import zx7gallery2D from "./zx9gallery2D.webp";
+import zx7gallery2T from "./zx9gallery2T.webp";
+import zx7gallery2M from "./zx9gallery2M.webp";
+import zx7gallery3D from "./zx9gallery3D.webp";
+import zx7gallery3T from "./zx9gallery3T.webp";
+import zx7gallery3M from "./zx9gallery3M.webp";
+import yz1gallery1D from "./yx1gallery1D.webp";
+import yz1gallery1T from "./yx1gallery1T.webp";
+import yz1gallery1M from "./yx1gallery1M.webp";
+import yz1gallery2D from "./yx1gallery2D.webp";
+import yz1gallery2T from "./yx1gallery2T.webp";
+import yz1gallery2M from "./yx1gallery2M.webp";
+import yz1gallery3D from "./yx1gallery3D.webp";
+import yz1gallery3T from "./yx1gallery3T.webp";
+import yz1gallery3M from "./yx1gallery3M.webp";
+import xx59gallery1D from "./xx59gallery1D.webp";
+import xx59gallery1T from "./xx59gallery1T.webp";
+import xx59gallery1M from "./xx59gallery1M.webp";
+import xx59gallery2D from "./xx59gallery2D.webp";
+import xx59gallery2T from "./xx59gallery2T.webp";
+import xx59gallery2M from "./xx59gallery2M.webp";
+import xx59gallery3D from "./xx59gallery3D.webp";
+import xx59gallery3T from "./xx59gallery3T.webp";
+import xx59gallery3M from "./xx59gallery3M.webp";
+import xx99M1gallery1D from "./xx99M1gallery1D.webp";
+import xx99M1gallery1T from "./xx99M1gallery1T.webp";
+import xx99M1gallery1M from "./xx99M1gallery1M.webp";
+import xx99M1gallery2D from "./xx99M1gallery2D.webp";
+import xx99M1gallery2T from "./xx99M1gallery2T.webp";
+import xx99M1gallery2M from "./xx99M1gallery2M.webp";
+import xx99M1gallery3D from "./xx99M1gallery3D.webp";
+import xx99M1gallery3T from "./xx99M1gallery3T.webp";
+import xx99M1gallery3M from "./xx99M1gallery3M.webp";
+import xx99M2gallery1D from "./xx99M2gallery1D.webp";
+import xx99M2gallery1T from "./xx99M2gallery1T.webp";
+import xx99M2gallery1M from "./xx99M2gallery1M.webp";
+import xx99M2gallery2D from "./xx99M2gallery2D.webp";
+import xx99M2gallery2T from "./xx99M2gallery2T.webp";
+import xx99M2gallery2M from "./xx99M2gallery2M.webp";
+import xx99M2gallery3D from "./xx99M2gallery3D.webp";
+import xx99M2gallery3T from "./xx99M2gallery3T.webp";
+import xx99M2gallery3M from "./xx99M2gallery3M.webp";
 
 export {
   headphoneCategoryL,
@@ -124,4 +178,58 @@ export {
   yx1ProductImgD,
   yx1ProductImgT,
   yx1ProductImgM,
+  zx9gallery1D,
+  zx9gallery1T,
+  zx9gallery1M,
+  zx9gallery2D,
+  zx9gallery2T,
+  zx9gallery2M,
+  zx9gallery3D,
+  zx9gallery3T,
+  zx9gallery3M,
+  zx7gallery1D,
+  zx7gallery1T,
+  zx7gallery1M,
+  zx7gallery2D,
+  zx7gallery2T,
+  zx7gallery2M,
+  zx7gallery3D,
+  zx7gallery3T,
+  zx7gallery3M,
+  yz1gallery1D,
+  yz1gallery1T,
+  yz1gallery1M,
+  yz1gallery2D,
+  yz1gallery2T,
+  yz1gallery2M,
+  yz1gallery3D,
+  yz1gallery3T,
+  yz1gallery3M,
+  xx59gallery1D,
+  xx59gallery1T,
+  xx59gallery1M,
+  xx59gallery2D,
+  xx59gallery2T,
+  xx59gallery2M,
+  xx59gallery3D,
+  xx59gallery3T,
+  xx59gallery3M,
+  xx99M1gallery1D,
+  xx99M1gallery1T,
+  xx99M1gallery1M,
+  xx99M1gallery2D,
+  xx99M1gallery2T,
+  xx99M1gallery2M,
+  xx99M1gallery3D,
+  xx99M1gallery3T,
+  xx99M1gallery3M,
+  xx99M2gallery1D,
+  xx99M2gallery1T,
+  xx99M2gallery1M,
+  xx99M2gallery2D,
+  xx99M2gallery2T,
+  xx99M2gallery2M,
+  xx99M2gallery3D,
+  xx99M2gallery3T,
+  xx99M2gallery3M,
 };
