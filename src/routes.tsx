@@ -27,6 +27,11 @@ const router = createBrowserRouter([
       { path: "headphones/xx59", element: <Xx59Headphone /> },
       { path: "speakers/zx9", element: <Zx9Speaker /> },
       { path: "speakers/zx7", element: <Zx7Speaker /> },
+      { path: "/xx99markII", element: <Xx99MarkIIHeadphone /> },
+      { path: "/xx99markI", element: <Xx99MarkIHeadphone /> },
+      { path: "/xx59", element: <Xx59Headphone /> },
+      { path: "/zx9", element: <Zx9Speaker /> },
+      { path: "/zx7", element: <Zx7Speaker /> },
     ],
   },
 ]);
