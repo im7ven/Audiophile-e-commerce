@@ -11,12 +11,8 @@ export const PagePadding = styled.div`
 export const homeBlockMargin = css`
   margin-bottom: 12rem;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 9.6rem;
-  }
-
   @media screen and (min-width: 1024px) {
-    margin-bottom: 20rem;
+    margin-bottom: 16rem;
   }
 `;
 
