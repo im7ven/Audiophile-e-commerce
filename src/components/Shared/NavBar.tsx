@@ -11,17 +11,18 @@ import logo from "../../images/logo.webp";
 import cart from "../../images/icon-cart.svg";
 
 interface Props {
-  onToggle: () => void;
+  onToggleMenu: () => void;
+  onToggleCart: () => void;
 }
 
-export const NavBar = ({ onToggle }: Props) => {
+export const NavBar = ({ onToggleMenu, onToggleCart }: Props) => {
   return (
     <NavWrapper>
       <Nav>
         <LogoMenuWrapper>
           <MenuIcon
             loading="lazy"
-            onClick={() => onToggle()}
+            onClick={() => onToggleMenu()}
             src={hamburger}
             alt="Menu icon"
           />
@@ -33,7 +34,12 @@ export const NavBar = ({ onToggle }: Props) => {
           <NavItem to="speakers">Speakers</NavItem>
           <NavItem to="earphones">Earphones</NavItem>
         </NavList>
-        <img loading="lazy" src={cart} alt="Shopping cart" />
+        <img
+          loading="lazy"
+          src={cart}
+          onClick={() => onToggleCart()}
+          alt="Shopping cart"
+        />
       </Nav>
     </NavWrapper>
   );
