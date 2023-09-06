@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-
 import { Layout } from "./pages/Layout";
 import { HomePage } from "./pages/HomePage";
 import { SpeakerPage } from "./pages/SpeakerPage";
@@ -11,11 +10,16 @@ import { Xx99MarkIIHeadphone } from "./pages/Xx99MarkIIHeadphone";
 import { Xx59Headphone } from "./pages/Xx59Headphone";
 import { Zx9Speaker } from "./pages/Zx9Speaker";
 import { Zx7Speaker } from "./pages/Zx7Speaker";
+import { CartContextProvider } from "./context/CartContext";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: (
+      <CartContextProvider>
+        <Layout />
+      </CartContextProvider>
+    ),
     children: [
       { path: "", element: <HomePage /> },
       { path: "speakers", element: <SpeakerPage /> },
