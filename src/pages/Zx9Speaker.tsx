@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ProductImageGallery } from "../components/Product/ProductImageGallery";
 import { ProductItem } from "../components/Product/ProductItem";
 import { ProductItemFeature } from "../components/Product/ProductItemFeature";
@@ -5,6 +6,7 @@ import { BestGearBlock } from "../components/Shared/BestGearBlock";
 import { Category } from "../components/Shared/Category";
 import { ReturnButton } from "../components/Shared/ReturnButton";
 import { SuggestionProductCard } from "../components/Shared/SuggestionProductCard";
+import { useCart } from "../context/CartContext";
 import {
   xx59SuggestD,
   xx59SuggestM,
@@ -15,6 +17,7 @@ import {
   zx7SuggestD,
   zx7SuggestM,
   zx7SuggestT,
+  zx9Cart,
   zx9ProductImgD,
   zx9ProductImgM,
   zx9ProductImgT,
@@ -39,18 +42,49 @@ import {
   SuggestionBlockHeading,
   SuggestionBlockContainer,
 } from "../styles/Shared/styles.SuggestionProductBlock";
+import { PrimaryBtn } from "../styles/styles.button";
 
 export const Zx9Speaker = () => {
+  const { addToCart, cart } = useCart();
+  const [productQuantity, setProductQuantity] = useState(1);
+
+  const handleAddQuantity = () => {
+    setProductQuantity(productQuantity + 1);
+  };
+
+  const handleRemoveQuantity = () => {
+    productQuantity <= 1 ? null : setProductQuantity(productQuantity - 1);
+  };
+
+  const handleAddProduct = () => {
+    return addToCart(
+      1,
+      zx9Cart,
+      "zx9",
+      4500,
+      4500 * productQuantity,
+      productQuantity
+    );
+  };
+
+  console.log(cart);
+
   return (
     <PagePadding>
       <ReturnButton route="/speakers" />
       <ProductItem
+        onRemove={handleRemoveQuantity}
+        onAdd={handleAddQuantity}
+        quantity={productQuantity}
         tabletSrc={zx9ProductImgT}
         mobileSrc={zx9ProductImgM}
         src={zx9ProductImgD}
         productName="Zx9 Speaker"
         alt="ZX9 Speaker"
         price="$4,500"
+        addToCartBtn={
+          <PrimaryBtn onClick={handleAddProduct}>Add to Cart</PrimaryBtn>
+        }
         description="Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups."
         overline={<ProductItemOverline>New product</ProductItemOverline>}
       />

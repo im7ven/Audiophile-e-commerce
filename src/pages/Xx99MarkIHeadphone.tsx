@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ProductImageGallery } from "../components/Product/ProductImageGallery";
 import { ProductItem } from "../components/Product/ProductItem";
 import { ProductItemFeature } from "../components/Product/ProductItemFeature";
@@ -27,6 +28,7 @@ import {
   zx9SuggestD,
   zx9SuggestM,
   zx9SuggestT,
+  xx99M1Cart,
 } from "../images";
 import { CategoryBlockWrapper } from "../styles/Pages/styles.category-page";
 import { PagePadding } from "../styles/Pages/styles.pages";
@@ -38,18 +40,50 @@ import {
   SuggestionBlockHeading,
   SuggestionBlockContainer,
 } from "../styles/Shared/styles.SuggestionProductBlock";
+import { useCart } from "../context/CartContext";
+import { PrimaryBtn } from "../styles/styles.button";
 
 export const Xx99MarkIHeadphone = () => {
+  const { addToCart, cart } = useCart();
+  const [productQuantity, setProductQuantity] = useState(1);
+
+  const handleAddQuantity = () => {
+    setProductQuantity(productQuantity + 1);
+  };
+
+  const handleRemoveQuantity = () => {
+    productQuantity <= 1 ? null : setProductQuantity(productQuantity - 1);
+  };
+
+  const handleAddProduct = () => {
+    return addToCart(
+      3,
+      xx99M1Cart,
+      "xx99 Mark I",
+      1750,
+      1750 * productQuantity,
+      productQuantity
+    );
+  };
+
+  console.log(cart);
+
   return (
     <PagePadding>
       <ReturnButton route="/headphones" />
       <ProductItem
+        onRemove={handleRemoveQuantity}
+        onAdd={handleAddQuantity}
+        quantity={productQuantity}
         tabletSrc={xx99M1ProductImgT}
         mobileSrc={xx99M1ProductImgM}
         src={xx99M1ProductImgD}
         productName="XX99 Mark I Headphones"
         alt="XX99 Mark I Headphones"
         price="$1,750"
+        addToCartBtn={
+          <PrimaryBtn onClick={handleAddProduct}>Add to Cart</PrimaryBtn>
+        }
         description="As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go. "
       />
       <ProductItemFeature

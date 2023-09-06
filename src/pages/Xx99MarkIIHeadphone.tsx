@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ProductImageGallery } from "../components/Product/ProductImageGallery";
 import { ProductItem } from "../components/Product/ProductItem";
 import { ProductItemFeature } from "../components/Product/ProductItemFeature";
@@ -5,6 +6,7 @@ import { BestGearBlock } from "../components/Shared/BestGearBlock";
 import { Category } from "../components/Shared/Category";
 import { ReturnButton } from "../components/Shared/ReturnButton";
 import { SuggestionProductCard } from "../components/Shared/SuggestionProductCard";
+import { useCart } from "../context/CartContext";
 import {
   xx99M2ProductImgT,
   xx99M2ProductImgM,
@@ -27,6 +29,8 @@ import {
   zx9SuggestT,
   zx9SuggestM,
   zx9SuggestD,
+  yx1Cart,
+  xx99M2Cart,
 } from "../images";
 import { CategoryBlockWrapper } from "../styles/Pages/styles.category-page";
 import { PagePadding } from "../styles/Pages/styles.pages";
@@ -38,18 +42,49 @@ import {
   SuggestionBlockHeading,
   SuggestionBlockContainer,
 } from "../styles/Shared/styles.SuggestionProductBlock";
+import { PrimaryBtn } from "../styles/styles.button";
 
 export const Xx99MarkIIHeadphone = () => {
+  const { addToCart, cart, clearCart } = useCart();
+  const [productQuantity, setProductQuantity] = useState(1);
+
+  const handleAddQuantity = () => {
+    setProductQuantity(productQuantity + 1);
+  };
+
+  const handleRemoveQuantity = () => {
+    productQuantity <= 1 ? null : setProductQuantity(productQuantity - 1);
+  };
+
+  const handleAddProduct = () => {
+    return addToCart(
+      4,
+      xx99M2Cart,
+      "xx99 Mark II",
+      2999,
+      2999 * productQuantity,
+      productQuantity
+    );
+  };
+
+  console.log(cart);
+
   return (
     <PagePadding>
       <ReturnButton route="/headphones" />
       <ProductItem
+        onRemove={handleRemoveQuantity}
+        onAdd={handleAddQuantity}
+        quantity={productQuantity}
         tabletSrc={xx99M2ProductImgT}
         mobileSrc={xx99M2ProductImgM}
         src={xx99M2ProductImgD}
         productName="XX99 Mark II Headphones"
         alt="XX99 Mark II Headphones"
         price="$2,999"
+        addToCartBtn={
+          <PrimaryBtn onClick={handleAddProduct}>Add to Cart</PrimaryBtn>
+        }
         description="The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound."
       />
       <ProductItemFeature

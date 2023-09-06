@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ProductImageGallery } from "../components/Product/ProductImageGallery";
 import { ProductItem } from "../components/Product/ProductItem";
 import { ProductItemFeature } from "../components/Product/ProductItemFeature";
@@ -5,6 +6,7 @@ import { BestGearBlock } from "../components/Shared/BestGearBlock";
 import { Category } from "../components/Shared/Category";
 import { ReturnButton } from "../components/Shared/ReturnButton";
 import { SuggestionProductCard } from "../components/Shared/SuggestionProductCard";
+import { useCart } from "../context/CartContext";
 import {
   xx59SuggestD,
   xx59SuggestM,
@@ -12,6 +14,7 @@ import {
   xx99M1SuggestD,
   xx99M1SuggestM,
   xx99M1SuggestT,
+  yx1Cart,
   yx1ProductImgD,
   yx1ProductImgM,
   yx1ProductImgT,
@@ -39,18 +42,52 @@ import {
   SuggestionBlockContainer,
   SuggestionBlockHeading,
 } from "../styles/Shared/styles.SuggestionProductBlock";
+import { PrimaryBtn } from "../styles/styles.button";
 
 export const Yx1Earphone = () => {
+  const { addToCart, cart, clearCart } = useCart();
+  const [productQuantity, setProductQuantity] = useState(1);
+
+  const handleAddQuantity = () => {
+    setProductQuantity(productQuantity + 1);
+  };
+
+  const handleRemoveQuantity = () => {
+    productQuantity <= 1 ? null : setProductQuantity(productQuantity - 1);
+  };
+
+  const handleAddProduct = () => {
+    return addToCart(
+      6,
+      yx1Cart,
+      "yx1",
+      599,
+      599 * productQuantity,
+      productQuantity
+    );
+  };
+
+  console.log(cart);
+
   return (
     <PagePadding>
+      <button style={{ padding: "3rem" }} onClick={() => clearCart()}>
+        Test
+      </button>
       <ReturnButton route="/earphones" />
       <ProductItem
+        onRemove={handleRemoveQuantity}
+        onAdd={handleAddQuantity}
+        quantity={productQuantity}
         tabletSrc={yx1ProductImgT}
         mobileSrc={yx1ProductImgM}
         src={yx1ProductImgD}
         productName="Yx1 wireless Earphones"
         alt="YX1 Wireless Earphones"
         price="$599"
+        addToCartBtn={
+          <PrimaryBtn onClick={handleAddProduct}>Add to Cart</PrimaryBtn>
+        }
         overline={<ProductItemOverline>New product</ProductItemOverline>}
         description="Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature."
       />

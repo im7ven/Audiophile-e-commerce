@@ -129,6 +129,12 @@ import xx99M2SuggestM from "./xx99M2SuggestM.webp";
 import xx59SuggestD from "./xx59SuggestD.webp";
 import xx59SuggestT from "./xx59SuggestT.webp";
 import xx59SuggestM from "./xx59SuggestM.webp";
+import xx59Cart from "./xx59Cart.webp";
+import zx7Cart from "./zx7Cart.webp";
+import zx9Cart from "./zx9Cart.webp";
+import yx1Cart from "./yx1Cart.webp";
+import xx99M1Cart from "./xx99M1Cart.webp";
+import xx99M2Cart from "./xx99M2Cart.webp";
 
 export {
   headphoneCategoryL,
@@ -262,4 +268,10 @@ export {
   xx59SuggestD,
   xx59SuggestT,
   xx59SuggestM,
+  xx59Cart,
+  zx7Cart,
+  zx9Cart,
+  yx1Cart,
+  xx99M1Cart,
+  xx99M2Cart,
 };

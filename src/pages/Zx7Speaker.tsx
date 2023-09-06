@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ProductImageGallery } from "../components/Product/ProductImageGallery";
 import { ProductItem } from "../components/Product/ProductItem";
 import { ProductItemFeature } from "../components/Product/ProductItemFeature";
@@ -5,6 +6,7 @@ import { BestGearBlock } from "../components/Shared/BestGearBlock";
 import { Category } from "../components/Shared/Category";
 import { ReturnButton } from "../components/Shared/ReturnButton";
 import { SuggestionProductCard } from "../components/Shared/SuggestionProductCard";
+import { useCart } from "../context/CartContext";
 import {
   zx7ProductImgT,
   zx7ProductImgM,
@@ -27,6 +29,8 @@ import {
   zx9SuggestD,
   zx9SuggestM,
   zx9SuggestT,
+  zx9Cart,
+  zx7Cart,
 } from "../images";
 import { CategoryBlockWrapper } from "../styles/Pages/styles.category-page";
 import { PagePadding } from "../styles/Pages/styles.pages";
@@ -38,18 +42,49 @@ import {
   SuggestionBlockHeading,
   SuggestionBlockContainer,
 } from "../styles/Shared/styles.SuggestionProductBlock";
+import { PrimaryBtn } from "../styles/styles.button";
 
 export const Zx7Speaker = () => {
+  const { addToCart, cart } = useCart();
+  const [productQuantity, setProductQuantity] = useState(1);
+
+  const handleAddQuantity = () => {
+    setProductQuantity(productQuantity + 1);
+  };
+
+  const handleRemoveQuantity = () => {
+    productQuantity <= 1 ? null : setProductQuantity(productQuantity - 1);
+  };
+
+  const handleAddProduct = () => {
+    return addToCart(
+      2,
+      zx7Cart,
+      "zx7",
+      3500,
+      3500 * productQuantity,
+      productQuantity
+    );
+  };
+
+  console.log(cart);
+
   return (
     <PagePadding>
       <ReturnButton route="/speakers" />
       <ProductItem
+        onRemove={handleRemoveQuantity}
+        onAdd={handleAddQuantity}
+        quantity={productQuantity}
         tabletSrc={zx7ProductImgT}
         mobileSrc={zx7ProductImgM}
         src={zx7ProductImgD}
         productName="Zx7 Speaker"
         alt="ZX7 Speaker"
         price="$3,500"
+        addToCartBtn={
+          <PrimaryBtn onClick={handleAddProduct}>Add to Cart</PrimaryBtn>
+        }
         description="Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use."
       />
       <ProductItemFeature

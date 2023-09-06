@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ProductImageGallery } from "../components/Product/ProductImageGallery";
 import { ProductItem } from "../components/Product/ProductItem";
 import { ProductItemFeature } from "../components/Product/ProductItemFeature";
@@ -5,7 +6,9 @@ import { BestGearBlock } from "../components/Shared/BestGearBlock";
 import { Category } from "../components/Shared/Category";
 import { ReturnButton } from "../components/Shared/ReturnButton";
 import { SuggestionProductCard } from "../components/Shared/SuggestionProductCard";
+import { useCart } from "../context/CartContext";
 import {
+  xx59Cart,
   xx59ProductImgD,
   xx59ProductImgM,
   xx59ProductImgT,
@@ -38,18 +41,48 @@ import {
   SuggestionBlockContainer,
   SuggestionBlockHeading,
 } from "../styles/Shared/styles.SuggestionProductBlock";
+import { PrimaryBtn } from "../styles/styles.button";
 
 export const Xx59Headphone = () => {
+  const { addToCart, cart } = useCart();
+  const [productQuantity, setProductQuantity] = useState(1);
+
+  const handleAddQuantity = () => {
+    setProductQuantity(productQuantity + 1);
+  };
+
+  const handleRemoveQuantity = () => {
+    productQuantity <= 1 ? null : setProductQuantity(productQuantity - 1);
+  };
+
+  const handleAddProduct = () => {
+    return addToCart(
+      5,
+      xx59Cart,
+      "xx59",
+      899,
+      899 * productQuantity,
+      productQuantity
+    );
+  };
+
+  console.log(cart);
   return (
     <PagePadding>
       <ReturnButton route="/headphones" />
       <ProductItem
+        onRemove={handleRemoveQuantity}
+        onAdd={handleAddQuantity}
+        quantity={productQuantity}
         tabletSrc={xx59ProductImgT}
         mobileSrc={xx59ProductImgM}
         src={xx59ProductImgD}
         productName="XX59 Headphones"
         alt="XX59 Headphones"
         price="$899"
+        addToCartBtn={
+          <PrimaryBtn onClick={handleAddProduct}>Add to Cart</PrimaryBtn>
+        }
         description="Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move."
       />
       <ProductItemFeature
