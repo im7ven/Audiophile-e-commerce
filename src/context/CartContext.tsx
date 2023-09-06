@@ -1,10 +1,4 @@
-import {
-  ReactNode,
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import { ReactNode, createContext, useContext, useState } from "react";
 
 interface CartContextValue {
   addToCart: (
@@ -17,6 +11,8 @@ interface CartContextValue {
   ) => void;
   cart: CartItem[];
   clearCart: () => void;
+  decreaseProductQuantity: (id: number) => void;
+  increaseProductQuantity: (id: number) => void;
 }
 
 interface CartItem {
@@ -75,6 +71,41 @@ export const CartContextProvider = ({ children }: Props) => {
     }
   };
 
+  const decreaseProductQuantity = (id: number) => {
+    const multipleQuantityProd = cart.find(
+      (product) => product.id === id && product.quantity > 1
+    );
+
+    if (multipleQuantityProd) {
+      const updatedCart = cart.map((product) =>
+        product.id === id
+          ? {
+              ...product,
+              quantity: product.quantity - 1,
+              price: product.price - product.basePrice,
+            }
+          : product
+      );
+      updateCart(updatedCart);
+    } else {
+      const newCart = cart.filter((product) => product.id !== id);
+      setCart(newCart);
+    }
+  };
+
+  const increaseProductQuantity = (id: number) => {
+    const updatedCart = cart.map((product) =>
+      product.id === id
+        ? {
+            ...product,
+            price: product.price + product.basePrice,
+            quantity: product.quantity + 1,
+          }
+        : product
+    );
+    updateCart(updatedCart);
+  };
+
   const clearCart = () => {
     localStorage.removeItem("cart");
     setCart([]);
@@ -84,6 +115,8 @@ export const CartContextProvider = ({ children }: Props) => {
     addToCart,
     cart,
     clearCart,
+    decreaseProductQuantity,
+    increaseProductQuantity,
   };
   return (
     <CartContext.Provider value={cardContextValue}>
