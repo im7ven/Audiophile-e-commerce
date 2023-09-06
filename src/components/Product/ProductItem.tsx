@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import {
+  AddButton,
   ProductItemBtnWrapper,
   ProductItemContainer,
   ProductItemDescription,
@@ -7,9 +8,10 @@ import {
   ProductItemImage,
   ProductItemName,
   ProductItemPrice,
+  QuantityAmount,
+  QuantitySelectorWrapper,
+  RemoveButton,
 } from "../../styles/Product/styles.ProductItem";
-import { QuantitySelector } from "../Shared/QuantitySelector";
-import { PrimaryBtn } from "../../styles/styles.button";
 
 interface Props {
   tabletSrc: string;
@@ -20,6 +22,10 @@ interface Props {
   productName: string;
   description: string;
   price: string;
+  addToCartBtn: ReactNode;
+  onAdd: () => void;
+  onRemove: () => void;
+  quantity: number;
 }
 
 export const ProductItem = ({
@@ -31,6 +37,10 @@ export const ProductItem = ({
   productName,
   description,
   price,
+  addToCartBtn,
+  onAdd,
+  onRemove,
+  quantity,
 }: Props) => {
   return (
     <ProductItemContainer>
@@ -53,8 +63,14 @@ export const ProductItem = ({
         <ProductItemDescription>{description}</ProductItemDescription>
         <ProductItemPrice>{price}</ProductItemPrice>
         <ProductItemBtnWrapper>
-          <QuantitySelector />
-          <PrimaryBtn>Add to cart</PrimaryBtn>
+          <QuantitySelectorWrapper>
+            <RemoveButton onClick={() => onRemove()}>-</RemoveButton>
+            <span>
+              <QuantityAmount>{quantity}</QuantityAmount>
+            </span>
+            <AddButton onClick={() => onAdd()}>+</AddButton>
+          </QuantitySelectorWrapper>
+          {addToCartBtn}
         </ProductItemBtnWrapper>
       </ProductItemDetails>
     </ProductItemContainer>

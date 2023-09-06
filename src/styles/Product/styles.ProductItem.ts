@@ -1,6 +1,6 @@
-import { styled } from "styled-components";
-import { bodyText, h2, h6, overline } from "../styles.typography";
-import { block, caramel } from "../styles.utilities";
+import { css, styled } from "styled-components";
+import { bodyText, h2, h6, overline, subTitle } from "../styles.typography";
+import { block, caramel, flashWhiteBg } from "../styles.utilities";
 
 export const ProductItemContainer = styled.div`
   ${block}
@@ -93,6 +93,32 @@ export const ProductItemPrice = styled.p`
   @media screen and (min-width: 1024px) {
     margin-bottom: 4.7rem;
   }
+`;
+
+export const QuantitySelectorWrapper = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  ${flashWhiteBg}
+  width: 12rem;
+  height: 4.8rem;
+`;
+
+export const QuantityAmount = styled.p`
+  ${subTitle}
+`;
+
+export const SelectorBtn = css`
+  outline: 0;
+  border: 0;
+`;
+
+export const RemoveButton = styled.button`
+  ${SelectorBtn}
+`;
+
+export const AddButton = styled.button`
+  ${SelectorBtn}
 `;
 
 export const ProductItemBtnWrapper = styled.div`
