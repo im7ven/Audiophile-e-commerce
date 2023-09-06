@@ -23,6 +23,7 @@ interface CartItem {
   id: number;
   image: string;
   name: string;
+  basePrice: number;
   price: number;
   quantity: number;
 }
