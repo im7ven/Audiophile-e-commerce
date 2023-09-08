@@ -5,6 +5,7 @@ import { Menu } from "../components/Shared/Menu";
 import { useEffect, useState } from "react";
 import { Footer } from "../components/Shared/Footer";
 import { Cart } from "../components/Shared/Cart";
+import { ScrollUp } from "../components/Shared/ScrollUp";
 
 export const Layout = () => {
   const [isVisible, setVisibility] = useState(false);
@@ -33,6 +34,7 @@ export const Layout = () => {
   return (
     <>
       <GlobalStyles />
+      <ScrollUp />
       <NavBar onToggleMenu={toggleMenu} onToggleCart={toggleCart} />
       <Menu isvisible={isVisible} />
       {isCartOpen && <Cart onCloseCart={() => setIsCartOpen(false)} />}
