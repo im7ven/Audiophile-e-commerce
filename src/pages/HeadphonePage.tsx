@@ -23,7 +23,7 @@ import { ProductOverline } from "../styles/Product/styles.ProductFeature";
 export const HeadphonePage = () => {
   return (
     <>
-      <CategoryPageHeading heading="speakers" />
+      <CategoryPageHeading heading="headphones" />
       <PagePadding>
         <CategoryPageFeatureWrapper>
           <ProductFeature
