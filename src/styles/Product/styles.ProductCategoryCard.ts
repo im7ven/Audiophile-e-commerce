@@ -1,5 +1,7 @@
 import { styled } from "styled-components";
 import { flashWhiteBg } from "../styles.utilities";
+import { Link } from "react-router-dom";
+import { LinkBtn } from "../styles.button";
 
 export const CategoryCard = styled.div`
   ${flashWhiteBg}
@@ -35,4 +37,8 @@ export const CategoryCardLabel = styled.h2`
   text-transform: uppercase;
   text-align: center;
   margin: 10rem 0 0 0;
+`;
+
+export const CategoryLink = styled(Link)`
+  ${LinkBtn}
 `;

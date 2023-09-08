@@ -3,6 +3,7 @@ import {
   CategoryImgContainer,
   CategoryCardLabel,
   CategoryBtnContainer,
+  CategoryLink,
 } from "../../styles/Product/styles.ProductCategoryCard";
 import { BtnArrow, LinkBtn } from "../../styles/styles.button";
 import { ProductImage } from "./ProductImage";
@@ -15,6 +16,7 @@ interface Props {
   largeSrc: string;
   minWidth: string;
   alt: string;
+  route: string;
 }
 
 export const ProductCategoryCard = ({
@@ -24,6 +26,7 @@ export const ProductCategoryCard = ({
   largeSrc,
   minWidth,
   alt,
+  route,
 }: Props) => {
   return (
     <CategoryCard>
@@ -38,10 +41,10 @@ export const ProductCategoryCard = ({
       </CategoryImgContainer>
       <CategoryCardLabel>{label}</CategoryCardLabel>
       <CategoryBtnContainer>
-        <LinkBtn>
+        <CategoryLink to={route}>
           Shop
           <BtnArrow src={arrow} />
-        </LinkBtn>
+        </CategoryLink>
       </CategoryBtnContainer>
     </CategoryCard>
   );

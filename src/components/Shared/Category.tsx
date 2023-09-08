@@ -19,6 +19,7 @@ export const Category = () => {
         largeSrc={headphoneCategoryS}
         minWidth="160px"
         alt="Earphones"
+        route="/headphones"
       />
       <ProductCategoryCard
         label="speakers"
@@ -27,6 +28,7 @@ export const Category = () => {
         largeSrc={speakerCategoryS}
         minWidth="160px"
         alt="Earphones"
+        route="/speakers"
       />
       <ProductCategoryCard
         label="Earphones"
@@ -35,6 +37,7 @@ export const Category = () => {
         largeSrc={earphoneCategoryS}
         minWidth="170px"
         alt="Earphones"
+        route="/earphones"
       />
     </CategoryWrapper>
   );

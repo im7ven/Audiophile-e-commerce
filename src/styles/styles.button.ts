@@ -54,12 +54,10 @@ export const OutlineBtn = styled.button`
   }
 `;
 
-export const LinkBtn = styled.button`
+export const LinkBtn = css`
   ${bodyText}
   ${subTitle}
-  outline: 0;
-  border: 0;
-  background: none;
+  text-decoration: none;
   cursor: pointer;
 
   &:hover {
