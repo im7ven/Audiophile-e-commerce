@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { block, caramel, navList } from "../styles.utilities";
+import { block, caramel, caramelBg, navList } from "../styles.utilities";
 import { subTitle } from "../styles.typography";
 import { Link } from "react-router-dom";
 
@@ -60,4 +60,23 @@ export const NavItem = styled(Link)`
   &:hover {
     ${caramel}
   }
+`;
+
+export const CartIconWrapper = styled.div`
+  position: relative;
+`;
+
+export const CartNotification = styled.div`
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 100%;
+  ${caramelBg}
+  position: absolute;
+  top: -30%;
+  right: -40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ${subTitle}
+  color: #fff;
 `;

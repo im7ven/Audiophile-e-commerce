@@ -1,4 +1,6 @@
 import {
+  CartIconWrapper,
+  CartNotification,
   LogoMenuWrapper,
   MenuIcon,
   Nav,
@@ -8,7 +10,8 @@ import {
 } from "../../styles/Shared/styles.NavBar";
 import hamburger from "../../images/icon-hamburger.webp";
 import logo from "../../images/logo.webp";
-import cart from "../../images/icon-cart.svg";
+import cartIcon from "../../images/icon-cart.svg";
+import { useCart } from "../../context/CartContext";
 
 interface Props {
   onToggleMenu: () => void;
@@ -16,6 +19,8 @@ interface Props {
 }
 
 export const NavBar = ({ onToggleMenu, onToggleCart }: Props) => {
+  const { cart } = useCart();
+
   return (
     <NavWrapper>
       <Nav>
@@ -34,12 +39,17 @@ export const NavBar = ({ onToggleMenu, onToggleCart }: Props) => {
           <NavItem to="speakers">Speakers</NavItem>
           <NavItem to="earphones">Earphones</NavItem>
         </NavList>
-        <img
-          loading="lazy"
-          src={cart}
-          onClick={() => onToggleCart()}
-          alt="Shopping cart"
-        />
+        <CartIconWrapper>
+          <img
+            loading="lazy"
+            src={cartIcon}
+            onClick={() => onToggleCart()}
+            alt="Shopping cart"
+          />
+          {cart.length > 0 && (
+            <CartNotification>{cart.length}</CartNotification>
+          )}
+        </CartIconWrapper>
       </Nav>
     </NavWrapper>
   );
