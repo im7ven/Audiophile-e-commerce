@@ -11,6 +11,7 @@ import { Xx59Headphone } from "./pages/Xx59Headphone";
 import { Zx9Speaker } from "./pages/Zx9Speaker";
 import { Zx7Speaker } from "./pages/Zx7Speaker";
 import { CartContextProvider } from "./context/CartContext";
+import { CheckOutPage } from "./pages/CheckOutPage";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
       { path: "speakers", element: <SpeakerPage /> },
       { path: "earphones", element: <EarphonePage /> },
       { path: "headphones", element: <HeadphonePage /> },
+      { path: "checkout", element: <CheckOutPage /> },
       { path: "earphones/yx1wireless", element: <Yx1Earphone /> },
       { path: "headphones/xx99markI", element: <Xx99MarkIHeadphone /> },
       { path: "headphones/xx99markII", element: <Xx99MarkIIHeadphone /> },
