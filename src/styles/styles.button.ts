@@ -27,6 +27,9 @@ export const PrimaryBtnFullW = styled.button`
   ${caramelBg}
   display:block;
   width: 100%;
+  border: 0;
+  color: #fff;
+  outline: 0;
 `;
 
 export const SecondaryBtn = styled.button`
