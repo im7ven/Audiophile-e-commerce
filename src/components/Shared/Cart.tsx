@@ -9,6 +9,7 @@ import {
   CartPlaceHolder,
   CartQuantitySelector,
   CartTotal,
+  CheckOutBtn,
   ClearCartBtn,
   ProductDetails,
   ProductName,
@@ -24,7 +25,6 @@ import {
   AddButton,
   RemoveButton,
 } from "../../styles/Product/styles.ProductItem";
-import { PrimaryBtn } from "../../styles/styles.button";
 
 interface Props {
   onCloseCart: () => void;
@@ -93,7 +93,7 @@ export const Cart = ({ onCloseCart }: Props) => {
                     return acc + product.price;
                   }, 0)}
                 </CartTotal>
-                <PrimaryBtn style={{ width: "100%" }}>Checkout</PrimaryBtn>
+                <CheckOutBtn to="checkout">Checkout</CheckOutBtn>
               </CartFooter>
             </>
           )}

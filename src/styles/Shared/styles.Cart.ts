@@ -1,6 +1,13 @@
 import { css, styled } from "styled-components";
 import { bodyText, h6, subTitle } from "../styles.typography";
-import { block, caramel, flashWhiteBg } from "../styles.utilities";
+import {
+  atomicTangerineBg,
+  block,
+  caramel,
+  caramelBg,
+  flashWhiteBg,
+} from "../styles.utilities";
+import { Link } from "react-router-dom";
 
 const PrimaryFlexLayout = css`
   display: flex;
@@ -38,6 +45,7 @@ export const CartContainer = styled.div`
   height: auto;
   background: #fff;
   padding: 1rem;
+  border-radius: 8px;
 
   @media screen and (min-width: 350px) {
     padding: 3.2rem;
@@ -97,6 +105,7 @@ export const ProductThumbnail = styled.img`
 
 export const ProductName = styled.p`
   ${bodyText}
+  text-transform: uppercase;
   font-weight: 700;
   color: #000;
   margin: 0;
@@ -126,6 +135,7 @@ export const Quantity = styled.p`
 export const CartFooter = styled.footer`
   ${PrimaryFlexLayout}
   flex-wrap: wrap;
+  align-items: center;
   column-gap: 2.4rem;
 `;
 
@@ -137,8 +147,28 @@ export const TotalLabel = styled.p`
 export const CartTotal = styled.p`
   ${h6}
   color: #000;
+  margin: 0;
 `;
 
 export const CartPlaceHolder = styled.p`
   ${bodyText}
+`;
+
+export const CheckOutBtn = styled(Link)`
+  ${caramelBg}
+  ${subTitle}
+  padding:  1.6rem 5.5rem;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    padding: 1.6rem 6.2rem;
+  }
+
+  &:hover {
+    transition: 0.3s;
+    ${atomicTangerineBg}
+  }
 `;
