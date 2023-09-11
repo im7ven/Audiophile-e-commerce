@@ -25,6 +25,7 @@ import {
   TotalLabel,
 } from "../../styles/Shared/styles.Cart";
 import { CardHeading } from "../../styles/Shared/styles.SuggestionProductCard";
+import { useLocation } from "react-router-dom";
 
 interface Props {
   onCloseCart: () => void;
@@ -93,7 +94,9 @@ export const Cart = ({ onCloseCart }: Props) => {
                     return acc + product.price;
                   }, 0)}
                 </CartTotal>
-                <CheckOutBtn to="checkout">Checkout</CheckOutBtn>
+                <CheckOutBtn onClick={() => onCloseCart()} to="checkout">
+                  Checkout
+                </CheckOutBtn>
               </CartFooter>
             </>
           )}
