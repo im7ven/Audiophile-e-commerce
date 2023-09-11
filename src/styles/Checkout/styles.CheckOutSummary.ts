@@ -9,7 +9,9 @@ export const SummaryContainer = styled.div`
   margin: 3.2rem auto 11.6rem;
   background: #fff;
   border-radius: 8px;
+  box-sizing: border-box;
   width: 100%;
+
   max-width: 65rem;
 
   @media screen and (min-width: 768px) {
