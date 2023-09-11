@@ -14,7 +14,7 @@ const PrimaryFlexLayout = css`
   justify-content: space-between;
 `;
 
-export const CartOverlayWrapper = styled.div`
+export const ModalWrapper = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -24,7 +24,7 @@ export const CartOverlayWrapper = styled.div`
   z-index: 2000;
 `;
 
-export const CartOverlay = styled.div`
+export const ModalOverlay = styled.div`
   ${block}
   display: flex;
   justify-content: end;
@@ -36,6 +36,11 @@ export const CartOverlay = styled.div`
 
   @media screen and (min-width: 1024px) {
     padding: 14rem 3rem;
+  }
+
+  &.checkout-modal {
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -90,6 +95,10 @@ export const CartBody = styled.div`
 export const ProductWrapper = styled.div`
   ${PrimaryFlexLayout}
   align-items: center;
+
+  &.spacing {
+    margin-bottom: 2.4rem;
+  }
 `;
 
 export const ProductDetails = styled.div`

@@ -1,16 +1,21 @@
 import { MouseEventHandler, useRef } from "react";
+import { useCart } from "../../context/CartContext";
+import {
+  AddButton,
+  RemoveButton,
+} from "../../styles/Product/styles.ProductItem";
 import {
   CartBody,
   CartContainer,
   CartFooter,
   CartHeader,
-  CartOverlay,
-  CartOverlayWrapper,
   CartPlaceHolder,
   CartQuantitySelector,
   CartTotal,
   CheckOutBtn,
   ClearCartBtn,
+  ModalOverlay,
+  ModalWrapper,
   ProductDetails,
   ProductName,
   ProductPrice,
@@ -19,12 +24,7 @@ import {
   Quantity,
   TotalLabel,
 } from "../../styles/Shared/styles.Cart";
-import { useCart } from "../../context/CartContext";
 import { CardHeading } from "../../styles/Shared/styles.SuggestionProductCard";
-import {
-  AddButton,
-  RemoveButton,
-} from "../../styles/Product/styles.ProductItem";
 
 interface Props {
   onCloseCart: () => void;
@@ -46,8 +46,8 @@ export const Cart = ({ onCloseCart }: Props) => {
   };
 
   return (
-    <CartOverlayWrapper ref={overlayWrapperRef} onClick={handleOverlayClick}>
-      <CartOverlay ref={overlayRef} onClick={handleOverlayClick}>
+    <ModalWrapper ref={overlayWrapperRef} onClick={handleOverlayClick}>
+      <ModalOverlay ref={overlayRef} onClick={handleOverlayClick}>
         <CartContainer>
           <CartHeader>
             <div>
@@ -98,7 +98,7 @@ export const Cart = ({ onCloseCart }: Props) => {
             </>
           )}
         </CartContainer>
-      </CartOverlay>
-    </CartOverlayWrapper>
+      </ModalOverlay>
+    </ModalWrapper>
   );
 };
