@@ -5,7 +5,7 @@ import {
   Yx1ImgContainer,
   Yx1InfoWrapper,
 } from "../../styles/Home/styles.Yx1Feature";
-import { OutlineBtn } from "../../styles/styles.button";
+import { SeeProductBtn } from "../../styles/Pages/styles.pages";
 
 export const Yx1Feature = () => {
   return (
@@ -14,7 +14,9 @@ export const Yx1Feature = () => {
       <Yx1DetailContainer>
         <Yx1InfoWrapper>
           <Yx1FeatureHeading>Yx1 earphones</Yx1FeatureHeading>
-          <OutlineBtn>See product</OutlineBtn>
+          <SeeProductBtn to="/yx1" className="inline outline">
+            See product
+          </SeeProductBtn>
         </Yx1InfoWrapper>
       </Yx1DetailContainer>
     </Yx1FeatureWrapper>

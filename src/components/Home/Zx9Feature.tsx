@@ -6,6 +6,7 @@ import {
   Zx9FeatureInfo,
   Zx9FeatureWrapper,
 } from "../../styles/Home/styles.Zx9Feature";
+import { SeeProductBtn } from "../../styles/Pages/styles.pages";
 import { SecondaryBtn } from "../../styles/styles.button";
 
 export const Zx9Feature = () => {
@@ -24,7 +25,9 @@ export const Zx9Feature = () => {
           Upgrade to premium speakers that are phenomenally built to deliver
           truly remarkable sound.
         </Zx9FeatureDescription>
-        <SecondaryBtn>See product</SecondaryBtn>
+        <SeeProductBtn className="darkBg inline" to="/zx9">
+          See product
+        </SeeProductBtn>
       </Zx9FeatureInfo>
     </Zx9FeatureWrapper>
   );

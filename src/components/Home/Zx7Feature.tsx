@@ -3,14 +3,16 @@ import {
   Zx7DetailWrapper,
   Zx7FeatureHeading,
 } from "../../styles/Home/styles.Zx7Feature";
-import { OutlineBtn } from "../../styles/styles.button";
+import { SeeProductBtn } from "../../styles/Pages/styles.pages";
 
 export const Zx7Feature = () => {
   return (
     <Zx7Container>
       <Zx7DetailWrapper>
         <Zx7FeatureHeading>zx7 Speaker</Zx7FeatureHeading>
-        <OutlineBtn>See product</OutlineBtn>
+        <SeeProductBtn className="inline outline" to="/zx7">
+          See product
+        </SeeProductBtn>
       </Zx7DetailWrapper>
     </Zx7Container>
   );

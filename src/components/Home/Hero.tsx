@@ -6,8 +6,8 @@ import {
   HeroInfo,
   HeroOverline,
   HeroWrapper,
-} from "../../styles/Shared/styles.Hero";
-import { PrimaryBtn } from "../../styles/styles.button";
+} from "../../styles/Home/styles.Hero";
+import { SeeProductBtn } from "../../styles/Pages/styles.pages";
 
 export const Hero = () => {
   return (
@@ -20,9 +20,9 @@ export const Hero = () => {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </HeroDescription>
-          <Link to={"/"}>
-            <PrimaryBtn>See product</PrimaryBtn>
-          </Link>
+          <SeeProductBtn className="inline" to="/xx99markII">
+            See product
+          </SeeProductBtn>
         </HeroInfo>
       </HeroContent>
     </HeroWrapper>

@@ -25,6 +25,30 @@ export const SeeProductBtn = styled(Link)`
   text-decoration: none;
   display: block;
 
+  &.inline {
+    display: inline;
+  }
+
+  &.outline {
+    border: 1.5px solid black;
+    background: 0;
+    color: #000;
+
+    &:hover {
+      transition: 0.3s;
+      background: #000;
+      color: #fff;
+    }
+  }
+
+  &.darkBg {
+    background: #000;
+
+    &:hover {
+      background: #4c4c4c;
+    }
+  }
+
   &:hover {
     transition: 0.3s;
     ${atomicTangerineBg}

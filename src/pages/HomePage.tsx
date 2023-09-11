@@ -1,5 +1,5 @@
 import { BestGearBlock } from "../components/Shared/BestGearBlock";
-import { Hero } from "../components/Shared/Hero";
+import { Hero } from "../components/Home/Hero";
 import { HomeCategory } from "../components/Home/HomeCategory";
 import { Yx1Feature } from "../components/Home/Yx1Feature";
 import { Zx7Feature } from "../components/Home/Zx7Feature";
