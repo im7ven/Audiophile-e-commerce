@@ -21,6 +21,7 @@ interface CartItem {
   name: string;
   basePrice: number;
   price: number;
+  vat: number;
   quantity: number;
 }
 
@@ -49,6 +50,8 @@ export const CartContextProvider = ({ children }: Props) => {
     price: number,
     quantity: number
   ) => {
+    const vat = (20 / 100) * price;
+
     const existingProduct = cart.find((product) => product.id === id);
 
     if (existingProduct) {
@@ -58,6 +61,7 @@ export const CartContextProvider = ({ children }: Props) => {
               ...product,
               price: product.price + quantity * basePrice,
               quantity: product.quantity + quantity,
+              vat: (20 / 100) * (product.price + quantity * basePrice),
             }
           : product
       );
@@ -65,7 +69,7 @@ export const CartContextProvider = ({ children }: Props) => {
     } else {
       const updatedCart = [
         ...cart,
-        { id, image, name, basePrice, price, quantity },
+        { id, image, name, basePrice, price, vat, quantity },
       ];
       setCart(updatedCart);
     }
@@ -83,6 +87,7 @@ export const CartContextProvider = ({ children }: Props) => {
               ...product,
               quantity: product.quantity - 1,
               price: product.price - product.basePrice,
+              vat: (20 / 100) * (product.price - product.basePrice),
             }
           : product
       );
@@ -100,6 +105,7 @@ export const CartContextProvider = ({ children }: Props) => {
             ...product,
             price: product.price + product.basePrice,
             quantity: product.quantity + 1,
+            vat: (20 / 100) * (product.price + product.basePrice),
           }
         : product
     );
