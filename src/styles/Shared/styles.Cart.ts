@@ -80,6 +80,7 @@ export const ClearCartBtn = styled.button`
   border: 0;
   background: 0;
   text-decoration: underline;
+  cursor: pointer;
 
   &:hover {
     ${caramel}

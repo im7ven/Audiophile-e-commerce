@@ -66,6 +66,10 @@ export const FormInput = styled.input`
   background: #fff;
   outline: 0;
 
+  &:focus {
+    border: 1px solid #d87d4a;
+  }
+
   &[type="number"]::-webkit-inner-spin-button,
   &[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -88,6 +92,7 @@ export const RadioWrapper = styled.label`
   border-radius: 8px;
   padding: 1.8rem 2.4rem;
   border: 1px solid #cfcfcf;
+  cursor: pointer;
 `;
 
 export const RadioInput = styled.input`

@@ -64,6 +64,7 @@ export const NavItem = styled(Link)`
 
 export const CartIconWrapper = styled.div`
   position: relative;
+  cursor: pointer;
 `;
 
 export const CartNotification = styled.div`

@@ -115,10 +115,12 @@ export const SelectorBtn = css`
 
 export const RemoveButton = styled.button`
   ${SelectorBtn}
+  cursor: pointer;
 `;
 
 export const AddButton = styled.button`
   ${SelectorBtn}
+  cursor: pointer;
 `;
 
 export const ProductItemBtnWrapper = styled.div`

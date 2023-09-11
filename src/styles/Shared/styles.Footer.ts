@@ -124,4 +124,5 @@ export const IconWrapper = styled.div`
 export const SocialIcon = styled.img`
   ${icon}
   width: 2.4rem;
+  cursor: pointer;
 `;
