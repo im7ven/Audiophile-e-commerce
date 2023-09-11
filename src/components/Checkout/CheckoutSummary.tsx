@@ -18,7 +18,7 @@ import {
 import { PrimaryBtnFullW } from "../../styles/styles.button";
 
 export const CheckoutSummary = () => {
-  const { cart } = useCart();
+  const { cart, formatValue } = useCart();
 
   const cartTotal = cart.reduce((acc, product) => {
     return acc + product.price;
@@ -40,7 +40,7 @@ export const CheckoutSummary = () => {
               <ProductThumbnail src={product.image} />
               <div>
                 <ProductName>{product.name}</ProductName>
-                <ProductPrice>${product.basePrice}</ProductPrice>
+                <ProductPrice>${formatValue(product.basePrice)}</ProductPrice>
               </div>
             </ProductDetails>
             <span>
@@ -52,7 +52,7 @@ export const CheckoutSummary = () => {
 
       <PriceInfoWrapper>
         <PriceHeading>Total</PriceHeading>
-        <CartTotal>${cartTotal}</CartTotal>
+        <CartTotal>${formatValue(cartTotal)}</CartTotal>
       </PriceInfoWrapper>
       <PriceInfoWrapper>
         <PriceHeading>Shipping</PriceHeading>
@@ -60,11 +60,13 @@ export const CheckoutSummary = () => {
       </PriceInfoWrapper>
       <PriceInfoWrapper>
         <PriceHeading>Vat (included)</PriceHeading>
-        <CartTotal>${vatTotal}</CartTotal>
+        <CartTotal>${formatValue(parseInt(vatTotal))}</CartTotal>
       </PriceInfoWrapper>
       <PriceInfoWrapper style={{ margin: "24px 0 3.2rem" }}>
         <PriceHeading>Grand Total</PriceHeading>
-        <CartTotal style={{ color: "#d87d4a" }}>${cartTotal + 50}</CartTotal>
+        <CartTotal style={{ color: "#d87d4a" }}>
+          ${formatValue(cartTotal + 50)}
+        </CartTotal>
       </PriceInfoWrapper>
       <PrimaryBtnFullW type="submit" form="checkoutForm" formNoValidate>
         Checkout

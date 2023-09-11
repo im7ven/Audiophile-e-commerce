@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { bodyText, h2, subTitle } from "../styles.typography";
-import { caramel, grid1x2M_T } from "../styles.utilities";
+import { caramel, caramelBg, grid1x2M_T } from "../styles.utilities";
 
 export const FormContainer = styled.div`
   padding: 3.1rem 2.4rem;

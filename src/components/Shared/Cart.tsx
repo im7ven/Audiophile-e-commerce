@@ -25,7 +25,6 @@ import {
   TotalLabel,
 } from "../../styles/Shared/styles.Cart";
 import { CardHeading } from "../../styles/Shared/styles.SuggestionProductCard";
-import { useLocation } from "react-router-dom";
 
 interface Props {
   onCloseCart: () => void;
@@ -34,8 +33,13 @@ interface Props {
 export const Cart = ({ onCloseCart }: Props) => {
   const overlayRef = useRef<HTMLDivElement | null>(null);
   const overlayWrapperRef = useRef<HTMLDivElement | null>(null);
-  const { cart, clearCart, decreaseProductQuantity, increaseProductQuantity } =
-    useCart();
+  const {
+    cart,
+    clearCart,
+    decreaseProductQuantity,
+    increaseProductQuantity,
+    formatValue,
+  } = useCart();
 
   const handleOverlayClick: MouseEventHandler<HTMLDivElement> = (e) => {
     if (
@@ -45,6 +49,10 @@ export const Cart = ({ onCloseCart }: Props) => {
       return onCloseCart();
     }
   };
+
+  const cartTotal = cart.reduce((acc, product) => {
+    return acc + product.price;
+  }, 0);
 
   return (
     <ModalWrapper ref={overlayWrapperRef} onClick={handleOverlayClick}>
@@ -67,7 +75,9 @@ export const Cart = ({ onCloseCart }: Props) => {
                       <ProductThumbnail src={product.image} />
                       <div>
                         <ProductName>{product.name}</ProductName>
-                        <ProductPrice>${product.basePrice}</ProductPrice>
+                        <ProductPrice>
+                          ${formatValue(product.basePrice)}
+                        </ProductPrice>
                       </div>
                     </ProductDetails>
                     <CartQuantitySelector>
@@ -88,12 +98,7 @@ export const Cart = ({ onCloseCart }: Props) => {
               </CartBody>
               <CartFooter>
                 <TotalLabel>Total</TotalLabel>
-                <CartTotal>
-                  $
-                  {cart.reduce((acc, product) => {
-                    return acc + product.price;
-                  }, 0)}
-                </CartTotal>
+                <CartTotal>${formatValue(cartTotal)}</CartTotal>
                 <CheckOutBtn onClick={() => onCloseCart()} to="checkout">
                   Checkout
                 </CheckOutBtn>

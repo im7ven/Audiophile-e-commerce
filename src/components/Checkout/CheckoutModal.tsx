@@ -37,7 +37,7 @@ interface Props {
 
 export const CheckoutModal = ({ onReturn }: Props) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const { cart } = useCart();
+  const { cart, formatValue } = useCart();
 
   const visibleProducts = isCollapsed ? cart : cart.slice(0, 1);
 
@@ -68,7 +68,9 @@ export const CheckoutModal = ({ onReturn }: Props) => {
                     <PurchaseImg src={product.image} />
                     <div>
                       <ProductName>{product.name}</ProductName>
-                      <ProductPrice>$ {product.price}</ProductPrice>
+                      <ProductPrice>
+                        $ {formatValue(product.price)}
+                      </ProductPrice>
                     </div>
                   </ProductDetails>
                   <ProductQuantity>x{product.quantity}</ProductQuantity>
@@ -88,7 +90,9 @@ export const CheckoutModal = ({ onReturn }: Props) => {
             <PriceContainer>
               <TotalWrapper>
                 <GrandTotal>Grand Total</GrandTotal>
-                <CartTotal className="light">${cartTotal + 50}</CartTotal>
+                <CartTotal className="light">
+                  ${formatValue(cartTotal + 50)}
+                </CartTotal>
               </TotalWrapper>
             </PriceContainer>
           </OrderInfoWrapper>

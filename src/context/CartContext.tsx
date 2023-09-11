@@ -13,6 +13,7 @@ interface CartContextValue {
   clearCart: () => void;
   decreaseProductQuantity: (id: number) => void;
   increaseProductQuantity: (id: number) => void;
+  formatValue: (value: number) => string;
 }
 
 interface CartItem {
@@ -118,12 +119,20 @@ export const CartContextProvider = ({ children }: Props) => {
     setCart([]);
   };
 
+  const formatValue = (value: number) => {
+    return value.toLocaleString("en-US", {
+      style: "decimal",
+      maximumFractionDigits: 0,
+    });
+  };
+
   const cardContextValue: CartContextValue = {
     addToCart,
     cart,
     clearCart,
     decreaseProductQuantity,
     increaseProductQuantity,
+    formatValue,
   };
   return (
     <CartContext.Provider value={cardContextValue}>
