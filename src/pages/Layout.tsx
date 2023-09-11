@@ -13,13 +13,13 @@ export const Layout = () => {
 
   useEffect(() => {
     if (isCartOpen) {
-      document.body.classList.add("cart-modal-open");
+      document.body.classList.add("modal-open");
     } else {
-      document.body.classList.remove("cart-modal-open");
+      document.body.classList.remove("-modal-open");
     }
 
     return () => {
-      document.body.classList.remove("cart-modal-open");
+      document.body.classList.remove("modal-open");
     };
   }, [isCartOpen]);
 
