@@ -41,6 +41,8 @@ export const ModalOverlay = styled.div`
   &.checkout-modal {
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    padding: 0 2.4rem;
   }
 `;
 
@@ -95,6 +97,11 @@ export const CartBody = styled.div`
 export const ProductWrapper = styled.div`
   ${PrimaryFlexLayout}
   align-items: center;
+
+  &.checkout-modal {
+    justify-content: center;
+    gap: 4.2rem;
+  }
 
   &.spacing {
     margin-bottom: 2.4rem;
@@ -157,6 +164,10 @@ export const CartTotal = styled.p`
   ${h6}
   color: #000;
   margin: 0;
+
+  &.light {
+    color: #fff;
+  }
 `;
 
 export const CartPlaceHolder = styled.p`

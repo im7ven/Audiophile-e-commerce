@@ -1,5 +1,8 @@
 import { styled } from "styled-components";
 import { bodyText, h6 } from "../styles.typography";
+import { Link } from "react-router-dom";
+import { btnBaseStyle } from "../styles.button";
+import { caramelBg } from "../styles.utilities";
 
 export const SummaryContainer = styled.div`
   padding: 3.2rem 2.4rem;
@@ -45,4 +48,13 @@ export const PriceHeading = styled.p`
   ${bodyText}
   text-transform: uppercase;
   margin: 0;
+`;
+
+export const ReturnHomeButton = styled(Link)`
+  ${btnBaseStyle}
+  ${caramelBg}
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  display: block;
 `;

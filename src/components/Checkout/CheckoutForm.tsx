@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import cashOnDelivery from "../../images/cashOnDelivery.svg";
 import {
@@ -20,17 +20,33 @@ import {
   SectionHeading,
 } from "../../styles/Checkout/styles.CheckOut";
 
-export const CheckoutForm = () => {
+export interface CheckoutFormData {
+  name: string;
+  email: string;
+  phoneNumber: number;
+  address: string;
+  zipCode: number;
+  city: string;
+  country: string;
+  payment: string;
+  eNumber?: number;
+  ePin?: number;
+}
+interface Props {
+  onSubmit: (data: CheckoutFormData) => void;
+}
+
+export const CheckoutForm = ({ onSubmit }: Props) => {
   const [paymentType, setPaymentType] = useState("");
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm<CheckoutFormData>();
 
   return (
     <FormContainer>
-      <Form>
+      <Form id="checkoutForm" onSubmit={handleSubmit(onSubmit)}>
         <FormHeading>Checkout</FormHeading>
         <SectionHeading>Billing Details</SectionHeading>
         <InputTextWrapper>
