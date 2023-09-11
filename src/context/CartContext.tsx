@@ -72,6 +72,7 @@ export const CartContextProvider = ({ children }: Props) => {
         { id, image, name, basePrice, price, vat, quantity },
       ];
       setCart(updatedCart);
+      updateCart(updatedCart);
     }
   };
 
