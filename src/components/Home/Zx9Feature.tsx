@@ -13,7 +13,6 @@ export const Zx9Feature = () => {
     <Zx9FeatureWrapper>
       <ImageWrapper>
         <img
-          loading="lazy"
           srcSet={`${homeZx9D} 1024w, ${homeZx9T} 768w, ${homeZx9M} 320w`}
           src={homeZx9T}
           width="100%"
