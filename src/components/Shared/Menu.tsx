@@ -16,6 +16,7 @@ export const Menu = ({ isvisible }: Props) => {
   return (
     <MenuContent isvisible={isvisible}>
       <ProductCategoryCard
+        route="/headphones"
         label="headphones"
         smallSrc={headphoneCategoryL}
         mediumSrc={headphoneCategoryS}
@@ -24,6 +25,7 @@ export const Menu = ({ isvisible }: Props) => {
         alt="Earphones"
       />
       <ProductCategoryCard
+        route="/speakers"
         label="speakers"
         smallSrc={speakerCategoryL}
         mediumSrc={speakerCategoryS}
@@ -32,6 +34,7 @@ export const Menu = ({ isvisible }: Props) => {
         alt="Earphones"
       />
       <ProductCategoryCard
+        route="/earphones"
         label="Earphones"
         smallSrc={earphoneCategoryL}
         mediumSrc={earphoneCategoryS}

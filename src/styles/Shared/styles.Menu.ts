@@ -20,7 +20,7 @@ export const MenuContent = styled.div<MenuContentProps>`
     gap: 1rem;
   }
 
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 1024px) {
     display: none;
   }
 `;
