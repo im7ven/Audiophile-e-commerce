@@ -14,6 +14,10 @@ export const FormContainer = styled.div`
   @media screen and (min-width: 1024px) {
     padding: 5.4rem 4.8rem 4.8rem;
   }
+
+  @media screen and (min-width: 1150px) {
+    margin-bottom: 14.1rem;
+  }
 `;
 
 export const Form = styled.form`
@@ -61,6 +65,12 @@ export const FormInput = styled.input`
   margin-bottom: 2.4rem;
   background: #fff;
   outline: 0;
+
+  &[type="number"]::-webkit-inner-spin-button,
+  &[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+  }
 
   &.input-error {
     border: 2px solid #cd2c2c;

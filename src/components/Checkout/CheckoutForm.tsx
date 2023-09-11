@@ -18,7 +18,7 @@ import {
   RadioInputWrapper,
   RadioWrapper,
   SectionHeading,
-} from "../../styles/Checkout/styles.CheckOut";
+} from "../../styles/Checkout/styles.CheckOutForm";
 
 export interface CheckoutFormData {
   name: string;
@@ -135,7 +135,10 @@ export const CheckoutForm = ({ onSubmit }: Props) => {
             <FormInput
               {...register("zipCode", {
                 required: "Required",
-                maxLength: { value: 5, message: "5 Character Maximum" },
+                pattern: {
+                  value: /^\d{5}$/,
+                  message: "Invalid Zip Code",
+                },
               })}
               type="number"
               placeholder="Enter Your Zip Code"
