@@ -7,9 +7,11 @@ export const PageHeadingContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 10.2rem;
+  margin-bottom: 6.4rem;
 
   @media screen and (min-width: 768px) {
     height: 24.6rem;
+    margin: 0;
   }
 
   @media screen and (min-width: 1024px) {
