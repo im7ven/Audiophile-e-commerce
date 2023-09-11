@@ -1,13 +1,13 @@
+import arrow from "../../images/icon-arrow-right.svg";
 import {
-  CategoryCard,
-  CategoryImgContainer,
-  CategoryCardLabel,
   CategoryBtnContainer,
+  CategoryCard,
+  CategoryCardLabel,
+  CategoryImgContainer,
   CategoryLink,
 } from "../../styles/Product/styles.ProductCategoryCard";
-import { BtnArrow, LinkBtn } from "../../styles/styles.button";
+import { BtnArrow } from "../../styles/styles.button";
 import { ProductImage } from "./ProductImage";
-import arrow from "../../images/icon-arrow-right.svg";
 
 interface Props {
   label: string;

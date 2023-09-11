@@ -8,44 +8,43 @@ import { ReturnButton } from "../components/Shared/ReturnButton";
 import { SuggestionProductCard } from "../components/Shared/SuggestionProductCard";
 import { useCart } from "../context/CartContext";
 import {
-  xx99M2ProductImgT,
-  xx99M2ProductImgM,
-  xx99M2ProductImgD,
-  xx99M2gallery1D,
-  xx99M2gallery1T,
-  xx99M2gallery1M,
-  xx99M2gallery2D,
-  xx99M2gallery2T,
-  xx99M2gallery2M,
-  xx99M2gallery3D,
-  xx99M2gallery3T,
-  xx99M2gallery3M,
-  xx99M1SuggestT,
-  xx99M1SuggestM,
-  xx99M1SuggestD,
-  xx59SuggestT,
-  xx59SuggestM,
   xx59SuggestD,
-  zx9SuggestT,
-  zx9SuggestM,
-  zx9SuggestD,
-  yx1Cart,
+  xx59SuggestM,
+  xx59SuggestT,
+  xx99M1SuggestD,
+  xx99M1SuggestM,
+  xx99M1SuggestT,
   xx99M2Cart,
+  xx99M2ProductImgD,
+  xx99M2ProductImgM,
+  xx99M2ProductImgT,
+  xx99M2gallery1D,
+  xx99M2gallery1M,
+  xx99M2gallery1T,
+  xx99M2gallery2D,
+  xx99M2gallery2M,
+  xx99M2gallery2T,
+  xx99M2gallery3D,
+  xx99M2gallery3M,
+  xx99M2gallery3T,
+  zx9SuggestD,
+  zx9SuggestM,
+  zx9SuggestT,
 } from "../images";
 import { CategoryBlockWrapper } from "../styles/Pages/styles.category-page";
 import { PagePadding } from "../styles/Pages/styles.pages";
 import {
-  ListItemQuantity,
   ListItem,
+  ListItemQuantity,
 } from "../styles/Product/styles.ProductItemFeature";
 import {
-  SuggestionBlockHeading,
   SuggestionBlockContainer,
+  SuggestionBlockHeading,
 } from "../styles/Shared/styles.SuggestionProductBlock";
 import { PrimaryBtn } from "../styles/styles.button";
 
 export const Xx99MarkIIHeadphone = () => {
-  const { addToCart, cart, clearCart } = useCart();
+  const { addToCart } = useCart();
   const [productQuantity, setProductQuantity] = useState(1);
 
   const handleAddQuantity = () => {
@@ -66,8 +65,6 @@ export const Xx99MarkIIHeadphone = () => {
       productQuantity
     );
   };
-
-  console.log(cart);
 
   return (
     <PagePadding>

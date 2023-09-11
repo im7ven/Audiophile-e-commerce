@@ -1,3 +1,10 @@
+import { useState } from "react";
+import { useCart } from "../../context/CartContext";
+import checkoutIcon from "../../images/icon-order-confirmation.svg";
+import {
+  ProductQuantity,
+  ReturnHomeButton,
+} from "../../styles/Checkout/styles.CheckOutSummary";
 import {
   CheckoutIcon,
   CheckoutMessage,
@@ -21,15 +28,6 @@ import {
   ProductPrice,
   ProductWrapper,
 } from "../../styles/Shared/styles.Cart";
-import checkoutIcon from "../../images/icon-order-confirmation.svg";
-import {
-  ProductQuantity,
-  ReturnHomeButton,
-} from "../../styles/Checkout/styles.CheckOutSummary";
-import { useCart } from "../../context/CartContext";
-import { useState } from "react";
-import { PrimaryBtnFullW } from "../../styles/styles.button";
-import { ReturnButton } from "../Shared/ReturnButton";
 
 interface Props {
   onReturn: () => void;

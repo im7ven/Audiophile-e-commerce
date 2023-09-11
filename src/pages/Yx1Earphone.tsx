@@ -45,7 +45,7 @@ import {
 import { PrimaryBtn } from "../styles/styles.button";
 
 export const Yx1Earphone = () => {
-  const { addToCart, cart, clearCart } = useCart();
+  const { addToCart } = useCart();
   const [productQuantity, setProductQuantity] = useState(1);
 
   const handleAddQuantity = () => {
@@ -67,13 +67,8 @@ export const Yx1Earphone = () => {
     );
   };
 
-  console.log(cart);
-
   return (
     <PagePadding>
-      <button style={{ padding: "3rem" }} onClick={() => clearCart()}>
-        Test
-      </button>
       <ReturnButton route="/earphones" />
       <ProductItem
         onRemove={handleRemoveQuantity}

@@ -8,9 +8,16 @@ import { ReturnButton } from "../components/Shared/ReturnButton";
 import { SuggestionProductCard } from "../components/Shared/SuggestionProductCard";
 import { useCart } from "../context/CartContext";
 import {
-  zx7ProductImgT,
-  zx7ProductImgM,
+  xx59SuggestD,
+  xx59SuggestM,
+  xx59SuggestT,
+  xx99M1SuggestD,
+  xx99M1SuggestM,
+  xx99M1SuggestT,
+  zx7Cart,
   zx7ProductImgD,
+  zx7ProductImgM,
+  zx7ProductImgT,
   zx7gallery1D,
   zx7gallery1M,
   zx7gallery1T,
@@ -20,32 +27,24 @@ import {
   zx7gallery3D,
   zx7gallery3M,
   zx7gallery3T,
-  xx59SuggestD,
-  xx59SuggestM,
-  xx59SuggestT,
-  xx99M1SuggestD,
-  xx99M1SuggestM,
-  xx99M1SuggestT,
   zx9SuggestD,
   zx9SuggestM,
   zx9SuggestT,
-  zx9Cart,
-  zx7Cart,
 } from "../images";
 import { CategoryBlockWrapper } from "../styles/Pages/styles.category-page";
 import { PagePadding } from "../styles/Pages/styles.pages";
 import {
-  ListItemQuantity,
   ListItem,
+  ListItemQuantity,
 } from "../styles/Product/styles.ProductItemFeature";
 import {
-  SuggestionBlockHeading,
   SuggestionBlockContainer,
+  SuggestionBlockHeading,
 } from "../styles/Shared/styles.SuggestionProductBlock";
 import { PrimaryBtn } from "../styles/styles.button";
 
 export const Zx7Speaker = () => {
-  const { addToCart, cart } = useCart();
+  const { addToCart } = useCart();
   const [productQuantity, setProductQuantity] = useState(1);
 
   const handleAddQuantity = () => {
@@ -66,8 +65,6 @@ export const Zx7Speaker = () => {
       productQuantity
     );
   };
-
-  console.log(cart);
 
   return (
     <PagePadding>

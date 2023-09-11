@@ -44,7 +44,7 @@ import {
 import { PrimaryBtn } from "../styles/styles.button";
 
 export const Xx59Headphone = () => {
-  const { addToCart, cart } = useCart();
+  const { addToCart } = useCart();
   const [productQuantity, setProductQuantity] = useState(1);
 
   const handleAddQuantity = () => {
@@ -66,7 +66,6 @@ export const Xx59Headphone = () => {
     );
   };
 
-  console.log(cart);
   return (
     <PagePadding>
       <ReturnButton route="/headphones" />

@@ -7,7 +7,6 @@ import {
   Zx9FeatureWrapper,
 } from "../../styles/Home/styles.Zx9Feature";
 import { SeeProductBtn } from "../../styles/Pages/styles.pages";
-import { SecondaryBtn } from "../../styles/styles.button";
 
 export const Zx9Feature = () => {
   return (

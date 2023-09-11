@@ -6,13 +6,15 @@ import { BestGearBlock } from "../components/Shared/BestGearBlock";
 import { Category } from "../components/Shared/Category";
 import { ReturnButton } from "../components/Shared/ReturnButton";
 import { SuggestionProductCard } from "../components/Shared/SuggestionProductCard";
+import { useCart } from "../context/CartContext";
 import {
-  xx99M1ProductImgT,
-  xx99M1ProductImgM,
-  xx99M1ProductImgD,
   xx59SuggestD,
   xx59SuggestM,
   xx59SuggestT,
+  xx99M1Cart,
+  xx99M1ProductImgD,
+  xx99M1ProductImgM,
+  xx99M1ProductImgT,
   xx99M1gallery1D,
   xx99M1gallery1M,
   xx99M1gallery1T,
@@ -28,23 +30,21 @@ import {
   zx9SuggestD,
   zx9SuggestM,
   zx9SuggestT,
-  xx99M1Cart,
 } from "../images";
 import { CategoryBlockWrapper } from "../styles/Pages/styles.category-page";
 import { PagePadding } from "../styles/Pages/styles.pages";
 import {
-  ListItemQuantity,
   ListItem,
+  ListItemQuantity,
 } from "../styles/Product/styles.ProductItemFeature";
 import {
-  SuggestionBlockHeading,
   SuggestionBlockContainer,
+  SuggestionBlockHeading,
 } from "../styles/Shared/styles.SuggestionProductBlock";
-import { useCart } from "../context/CartContext";
 import { PrimaryBtn } from "../styles/styles.button";
 
 export const Xx99MarkIHeadphone = () => {
-  const { addToCart, cart } = useCart();
+  const { addToCart } = useCart();
   const [productQuantity, setProductQuantity] = useState(1);
 
   const handleAddQuantity = () => {
@@ -65,8 +65,6 @@ export const Xx99MarkIHeadphone = () => {
       productQuantity
     );
   };
-
-  console.log(cart);
 
   return (
     <PagePadding>

@@ -35,17 +35,17 @@ import { CategoryBlockWrapper } from "../styles/Pages/styles.category-page";
 import { PagePadding } from "../styles/Pages/styles.pages";
 import { ProductItemOverline } from "../styles/Product/styles.ProductItem";
 import {
-  ListItemQuantity,
   ListItem,
+  ListItemQuantity,
 } from "../styles/Product/styles.ProductItemFeature";
 import {
-  SuggestionBlockHeading,
   SuggestionBlockContainer,
+  SuggestionBlockHeading,
 } from "../styles/Shared/styles.SuggestionProductBlock";
 import { PrimaryBtn } from "../styles/styles.button";
 
 export const Zx9Speaker = () => {
-  const { addToCart, cart } = useCart();
+  const { addToCart } = useCart();
   const [productQuantity, setProductQuantity] = useState(1);
 
   const handleAddQuantity = () => {
@@ -66,8 +66,6 @@ export const Zx9Speaker = () => {
       productQuantity
     );
   };
-
-  console.log(cart);
 
   return (
     <PagePadding>
