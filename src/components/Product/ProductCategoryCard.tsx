@@ -17,6 +17,7 @@ interface Props {
   minWidth: string;
   alt: string;
   route: string;
+  onClose: () => void;
 }
 
 export const ProductCategoryCard = ({
@@ -27,6 +28,7 @@ export const ProductCategoryCard = ({
   minWidth,
   alt,
   route,
+  onClose,
 }: Props) => {
   return (
     <CategoryCard>
@@ -41,7 +43,7 @@ export const ProductCategoryCard = ({
       </CategoryImgContainer>
       <CategoryCardLabel>{label}</CategoryCardLabel>
       <CategoryBtnContainer>
-        <CategoryLink to={route}>
+        <CategoryLink onClick={() => onClose()} to={route}>
           Shop
           <BtnArrow src={arrow} />
         </CategoryLink>

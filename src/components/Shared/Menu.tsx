@@ -11,11 +11,13 @@ import {
 
 interface Props {
   isvisible: boolean;
+  onClose: () => void;
 }
-export const Menu = ({ isvisible }: Props) => {
+export const Menu = ({ isvisible, onClose }: Props) => {
   return (
     <MenuContent isvisible={isvisible}>
       <ProductCategoryCard
+        onClose={onClose}
         route="/headphones"
         label="headphones"
         smallSrc={headphoneCategoryL}
@@ -25,6 +27,7 @@ export const Menu = ({ isvisible }: Props) => {
         alt="Earphones"
       />
       <ProductCategoryCard
+        onClose={onClose}
         route="/speakers"
         label="speakers"
         smallSrc={speakerCategoryL}
@@ -34,6 +37,7 @@ export const Menu = ({ isvisible }: Props) => {
         alt="Earphones"
       />
       <ProductCategoryCard
+        onClose={onClose}
         route="/earphones"
         label="Earphones"
         smallSrc={earphoneCategoryL}

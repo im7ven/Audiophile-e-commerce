@@ -31,12 +31,16 @@ export const Layout = () => {
     setIsCartOpen(!isCartOpen);
   };
 
+  const handleMenuClose = () => {
+    setVisibility(false);
+  };
+
   return (
     <>
       <GlobalStyles />
       <ScrollUp />
       <NavBar onToggleMenu={toggleMenu} onToggleCart={toggleCart} />
-      <Menu isvisible={isVisible} />
+      <Menu isvisible={isVisible} onClose={handleMenuClose} />
       {isCartOpen && <Cart onCloseCart={() => setIsCartOpen(false)} />}
       <div id="main">
         <Outlet />
